@@ -1,0 +1,6 @@
+input{
+  &.has-errors{
+    border: 1px solid #F15B59 !important;
+    background-color: rgba(241,91,89,0.12);
+  }
+}

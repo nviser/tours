@@ -1,0 +1,18 @@
+.home-logged {
+  height: 100%; }
+  .home-logged .logged-wrap {
+    position: relative;
+    min-height: calc(100% - 53px);
+    max-width: 1280px;
+    margin: 0 auto; }
+    .home-logged .logged-wrap .container {
+      padding: 0;
+      margin: 0;
+      width: 100%; }
+    .home-logged .logged-wrap .panel {
+      margin-top: 40px; }
+  .home-logged .static-footer {
+    position: relative;
+    margin-top: -56px; }
+  .home-logged .logged-empty {
+    height: 56px; }

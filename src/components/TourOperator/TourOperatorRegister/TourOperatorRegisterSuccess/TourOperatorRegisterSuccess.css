@@ -1,0 +1,22 @@
+.tour-operator-register-success-block {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  background: #ffffff; }
+
+.tour-operator-img {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0; }
+  .tour-operator-img img {
+    width: 100%;
+    height: 100%; }
+
+.tour-operator-btn--container-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; }
+
+.tour-operator-btn--continue {
+  min-width: 220px;
+  height: 40px; }

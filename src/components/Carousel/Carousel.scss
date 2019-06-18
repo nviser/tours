@@ -1,0 +1,23 @@
+@import "../../assets/scss/variables.scss";
+
+.carousel {
+  margin-bottom: 15px;
+  .carousel-slide-container {
+    height: 400px;
+    width: 100%;
+    background-color: $color_main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .carousel-slide-img, .carousel-slide-video {
+    width: initial;
+    height: initial;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .carousel-slide-video {
+    max-width: 85%;
+  }
+}

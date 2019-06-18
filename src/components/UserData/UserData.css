@@ -1,0 +1,55 @@
+.user-data .logged-background .logged-bg-img {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.user-data .logged-info-block {
+  padding-bottom: 40px;
+  border-bottom: 1.5px solid #C6C6C6; }
+  .user-data .logged-info-block .container .show-grid {
+    padding: 0 30px;
+    display: flex;
+    align-items: flex-end; }
+  .user-data .logged-info-block .grid-blocks {
+    height: 100%; }
+  .user-data .logged-info-block .user-img {
+    margin-top: -30px;
+    width: 140px;
+    box-shadow: 0 0 10px #000; }
+  .user-data .logged-info-block .logged-info {
+    line-height: 1.8; }
+    .user-data .logged-info-block .logged-info .info-header {
+      font-weight: 700;
+      font-size: 20px; }
+    .user-data .logged-info-block .logged-info p {
+      font-size: 13px; }
+  .user-data .logged-info-block .logged-actions .logged-socials {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+    .user-data .logged-info-block .logged-actions .logged-socials .social-for-img {
+      cursor: pointer;
+      width: 30px;
+      overflow: hidden; }
+      .user-data .logged-info-block .logged-actions .logged-socials .social-for-img.hidden {
+        display: none; }
+      .user-data .logged-info-block .logged-actions .logged-socials .social-for-img .social-img {
+        width: 140px; }
+        .user-data .logged-info-block .logged-actions .logged-socials .social-for-img .social-img.social-facebook {
+          margin-left: -39px; }
+        .user-data .logged-info-block .logged-actions .logged-socials .social-for-img .social-img.social-twitter {
+          margin-left: -75px; }
+        .user-data .logged-info-block .logged-actions .logged-socials .social-for-img .social-img.social-pint {
+          margin-left: -111px; }
+
+.user-data .logged-contact {
+  margin-top: 20px;
+  padding: 0 30px 20px 30px;
+  border-bottom: 1.5px solid #C6C6C6;
+  text-transform: uppercase;
+  line-height: 1.6;
+  font-size: 10px; }
+  .user-data .logged-contact span {
+    color: #2d2d2d;
+    font-weight: bold;
+    text-transform: none;
+    font-size: 16px; }

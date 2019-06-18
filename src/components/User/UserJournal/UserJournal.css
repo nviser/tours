@@ -1,0 +1,172 @@
+.journal-page {
+  height: 100%;
+  min-height: 100%;
+  font-family: "Roboto", sans-serif; }
+  .journal-page .journal-wrap {
+    min-height: 100%;
+    padding-bottom: 76px;
+    background-color: #f5f5f5; }
+  .journal-page .journal-container {
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto; }
+  .journal-page .journal-content {
+    padding: 20px 25px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11); }
+  .journal-page .journal-header {
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    line-height: 19px;
+    font-size: 28px;
+    margin: 10px 0 40px;
+    color: #2d2d2d; }
+  .journal-page .add-post-journal {
+    width: 100%;
+    padding: 20px 20px 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+    margin-bottom: 25px; }
+    .journal-page .add-post-journal .title-block {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 10px; }
+      .journal-page .add-post-journal .title-block .user-avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .journal-page .add-post-journal .title-block .user-avatar .avatar-img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%; }
+      .journal-page .add-post-journal .title-block .btn-send {
+        color: #008FB7;
+        font-size: 22px; }
+        .journal-page .add-post-journal .title-block .btn-send:focus {
+          outline: none; }
+    .journal-page .add-post-journal .user-main-block {
+      flex: 1;
+      padding: 0 20px; }
+    .journal-page .add-post-journal .user-story-textarea {
+      border: none;
+      resize: none;
+      box-shadow: none; }
+    .journal-page .add-post-journal .uploaded-preview {
+      display: flex;
+      align-items: stretch;
+      flex-wrap: wrap;
+      padding: 20px 0; }
+      .journal-page .add-post-journal .uploaded-preview .img-preview {
+        height: 150px;
+        position: relative;
+        margin: 0 8px 16px; }
+        .journal-page .add-post-journal .uploaded-preview .img-preview .btn-remove-uploaded {
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translate(50%, -50%);
+          width: 24px;
+          height: 24px;
+          padding: 0;
+          border: 1px solid #008FB7;
+          background: #ffffff;
+          color: #008FB7;
+          border-radius: 50%;
+          font-size: 12px;
+          font-weight: bold; }
+          .journal-page .add-post-journal .uploaded-preview .img-preview .btn-remove-uploaded:focus {
+            outline: none; }
+        .journal-page .add-post-journal .uploaded-preview .img-preview img {
+          max-height: 100%; }
+    .journal-page .add-post-journal .select-block {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      position: relative; }
+      .journal-page .add-post-journal .select-block .block-label {
+        color: #008FB7;
+        font-weight: bold;
+        margin-right: 15px; }
+      .journal-page .add-post-journal .select-block .location-info-block,
+      .journal-page .add-post-journal .select-block .search-block {
+        flex: 1;
+        display: flex;
+        align-items: center; }
+      .journal-page .add-post-journal .select-block .btn-select-close {
+        font-size: 15px;
+        font-weight: bold;
+        border: 1px solid #008FB7;
+        background: #ffffff;
+        color: #008FB7;
+        display: flex;
+        align-items: center;
+        padding: 5px; }
+      .journal-page .add-post-journal .select-block .input-block {
+        flex: 1;
+        position: relative;
+        margin-right: 15px; }
+      .journal-page .add-post-journal .select-block .search-textarea {
+        border: none;
+        box-shadow: none;
+        resize: none;
+        height: 100%; }
+      .journal-page .add-post-journal .select-block .search-list {
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border: 1px solid #ccc;
+        background: #fff;
+        max-height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-radius: 4px;
+        box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.8); }
+        .journal-page .add-post-journal .select-block .search-list .search-item {
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          padding: 10px;
+          text-overflow: ellipsis;
+          cursor: pointer; }
+          .journal-page .add-post-journal .select-block .search-list .search-item:hover {
+            background: #eee; }
+        .journal-page .add-post-journal .select-block .search-list .search-item + .search-item {
+          border-top: 1px solid #ccc; }
+    .journal-page .add-post-journal .select-action-block {
+      border-top: 1px solid #ccc;
+      padding-top: 10px; }
+      .journal-page .add-post-journal .select-action-block .btn-wrap {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px; }
+      .journal-page .add-post-journal .select-action-block .btn-select-type {
+        font-size: 15px;
+        font-weight: bold;
+        border: 1px solid #008FB7;
+        background: #ffffff;
+        color: #008FB7;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px; }
+        .journal-page .add-post-journal .select-action-block .btn-select-type .glyphicon {
+          font-size: 22px;
+          margin-right: 10px; }
+      .journal-page .add-post-journal .select-action-block .upload-btn {
+        position: relative;
+        overflow: hidden; }
+        .journal-page .add-post-journal .select-action-block .upload-btn .upload-btn-input {
+          cursor: pointer;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 1; }

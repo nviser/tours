@@ -1,0 +1,259 @@
+@import "../../../../assets/scss/variables.scss";
+@import "../../../../assets/scss/common.scss";
+
+.page-label {
+  font-size: 14px;
+  letter-spacing: 0.13px;
+  line-height: 16px;
+  color: $gray-01;
+}
+
+.stop-input {
+  border: none;
+  border-bottom: 2px solid $color_divider;
+  color: $color_main;
+  padding: 10px 20px;
+  outline: none;
+  height: auto;
+  width: 100%;
+  font-family: $font_roboto;
+  font-size: 15px;
+  font-weight: 500;
+  &::placeholder {
+    color: $gray-01;
+  }
+  &.pass {
+    margin-bottom: 15px;
+  }
+  &.control-active {
+    border-bottom: 2px solid $color_main;
+  }
+}
+.modal-sign-in-label {
+  @extend .page-label;
+  margin-bottom: 10px;
+}
+
+.btn-next {
+  &:disabled {
+    background: $gray-01;
+  }
+}
+
+.stop-page {
+  height: 100%;
+  min-height: 100%;
+  font-family: $font_roboto;
+  background-color: #fff;
+  .map-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .left-panel {
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 3px 0px 6px -3px rgba(0, 0, 0, 0.24);
+    padding-bottom: 55px;
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: #c6c6c6;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #888;
+    }
+    @media (max-width: 1200px) {
+      box-shadow: none;
+    }
+  }
+  .stop-wrap {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    .left-block {
+      // display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  .stop-main-block {
+
+     @media(max-width: 992px) {
+      align-self: center;
+      width: 100%;
+     }
+    .multi-panel {
+      margin-top: 15px;
+    }
+  }
+  .stop-container {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+
+    .stop-title-block {
+      margin-top: 25px;
+      .modal-sign-in-label {
+        font-size: 12px;
+      
+      }
+      .stop-header {
+        color: $color_text;
+        font-size: 16px;
+        line-height: 17px;
+        margin-bottom: 20px;
+      }
+      .auth-label {
+        @extend .page-label;
+      }
+      .react-autosuggest__input {
+        @include input();
+      }
+      
+    }
+
+    .stop-description {
+      margin-top: 20px;
+      .stop-descr {
+        .modal-sign-in-label {
+          font-size: 12px;
+        
+        }
+        textarea {
+          @include textarea();
+        }
+      }
+      .stop-description-addons{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+  }
+  .static-footer {
+    padding: 1px;
+  }
+  .Modal {
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.21);
+    padding: 30px;
+  }
+}
+.create-tour-section {
+  position: relative;
+  @media(max-width:768px) {
+    display: none;
+  }
+  .tour-map-title {
+    position: absolute;
+    z-index: 999;
+    color: #272727;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 19px;
+    top: 20px;
+    left: 25px;
+  }
+  .side-map {
+    height: calc(100vh - 120px);
+
+  }
+}
+
+.tour-stop-error {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-style: italic;
+  font-weight: 700;
+  right: 0;
+  color: #c93c00;
+}
+.symbol-count {
+  color: #8E8E8E;	
+  font-family: Roboto;	
+  font-size: 13px;	
+  line-height: 15px;	
+  text-align: right;
+  margin-top: 5px;
+}
+.stop-title{
+  input{
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    color: #272727;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    padding: 10px 20px;
+    outline: none;
+    height: 41px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+  }
+}
+.react-autosuggest__container{
+  position: relative;
+}
+
+@media screen and (max-width: 768px){
+  .stop-page{
+    .stop-container{
+      .left-block{
+        .left-panel{
+          padding: 15px;
+        }
+      }
+      .stop-bottom{
+        padding: 15px;
+        .info-string{
+          display: none;
+        }
+        justify-content: space-between;
+      }
+    }
+    .Modal{
+      left: 20px;
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      .preview{
+        width: 100%;
+      }
+      .modal-multi-files{
+        max-width: 100%;
+        overflow-y: auto;
+        max-height: 400px;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        .modal-multi-add-photo{
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.tour-create-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 65px;
+  background: #fff;
+  height: calc(100vh - 80px); }
+  @media screen and (max-width: 768px) {
+    .tour-create-container {
+      height: calc(100vh - 104px); } }
+
+.tour-create-img {
+  width: 290px;
+  height: 220px; }
+  .tour-create-img img {
+    height: 100%;
+    width: 100%; }
+
+.tour-create-title {
+  margin-top: 35px;
+  color: #272727;
+  font-family: Roboto;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  max-width: 647px; }
+
+.tour-create-btn--return {
+  text-transform: uppercase;
+  min-width: 203px;
+  height: 49px;
+  margin-top: 30px;
+  background-color: #7BC372 !important; }

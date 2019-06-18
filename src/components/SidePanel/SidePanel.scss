@@ -1,0 +1,110 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/common.scss";
+
+.side-panel {
+  font-family: $font_roboto;
+  display: block;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+  .side-container {
+    .user-info-block {
+      padding: 20px;
+      margin-bottom: 30px;
+      .row {
+        display: flex;
+        align-items: center;
+      }
+      .static-user-img {
+        width: 60px;
+        height: 60px;
+        background: #ffffff;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 3px solid $color_main2;
+        img {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .user-info {
+        margin-left: 10px;
+        .user-name {
+          color: $color_text;
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+          line-height: 20px;
+        }
+        .user-location {
+          cursor: pointer;
+          color: $gray-01;
+          font-size: 12px;
+          line-height: 20px;
+          min-height: 8px;
+          .map-marker {
+            margin-right: 5px;
+          
+          }
+        }
+        .user-edit {
+          text-decoration: underline;
+          font-size: 10px;
+          cursor: pointer;
+          color: $color_blue;
+          &:hover {
+            text-decoration: none;
+          }
+          .pencil {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .menu-list {
+      padding-bottom: 10px;
+      &.no-visible {
+        visibility: hidden;
+      }
+      &.log-out {
+        margin-top: 130px;
+      }
+      ul {
+        list-style: disc;
+      }
+
+      .log-out {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        .logout-btn {
+          width: 100%;
+          height: 49px;
+          text-transform: uppercase;
+          background-color: $color_blue_1;
+          &:hover {
+            background-color: $color_main_hover;
+          }
+        }
+      }
+    }
+    .btn-merchant-register,
+    .btn-create-tour{
+      margin: 40px 0 0 20px;
+      @include successBtn($color_blue_2);
+      border: none;
+    }
+    .btn-merchant-register{
+      padding-left: 16px;
+      padding-right: 16px;
+      border:1px solid $color_blue_2;
+      color:$color_blue_2;
+      background-color: transparent;
+    }
+    @media( max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+}

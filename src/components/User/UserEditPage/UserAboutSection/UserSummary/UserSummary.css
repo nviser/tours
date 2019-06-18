@@ -1,0 +1,3 @@
+.user-settings-summary textarea, .company-settings-summary textarea {
+  resize: none;
+  height: 100px; }

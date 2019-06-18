@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables.scss";
+@import "../../components/ModalSignUp/ModalSignUp.css";
+
+.modal-dialog {
+  .modal-content {
+    .modal-body {
+      .modal-input-wrap{
+        display: flex;
+        justify-content: space-between;
+        .halved-inputs {
+          width: 100%;
+          &:first-child {
+            margin-right: 15px;
+          }
+        }
+      }
+      .modal-sign-in-input {
+        &.input-halved {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+

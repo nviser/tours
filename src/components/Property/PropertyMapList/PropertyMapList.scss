@@ -1,0 +1,11 @@
+.property-map-list {
+  position: absolute;
+  right: 0;
+  width: 280px;
+  top: 53px;
+  height: calc(100% - 53px);
+  overflow: auto;
+  .property-map-item {
+    margin-top: 10px;
+  }
+}

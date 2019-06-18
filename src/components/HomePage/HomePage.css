@@ -1,0 +1,159 @@
+.secondary-header, .home-page-wrap .home-page-welcome .welcome-wrap .welcome-header, .home-page-wrap .home-page-platform .platform-wrap .platform-header {
+  color: #2d2d2d;
+  text-align: center;
+  font-size: 36px;
+  padding: 0 20px; }
+
+.home-page-wrap {
+  width: 100%; }
+  .home-page-wrap .home-page-main {
+    width: 100%;
+    height: calc(100vh - 136px);
+    background: #70afce; }
+    @media screen and (max-width: 768px) {
+      .home-page-wrap .home-page-main {
+        height: calc(100vh - 176px); } }
+    .home-page-wrap .home-page-main .main-wrap {
+      padding: 80px 0; }
+      .home-page-wrap .home-page-main .main-wrap .main-title {
+        font-size: 50px;
+        color: #ffffff;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 200px;
+        padding: 0 20px; }
+  .home-page-wrap .home-page-welcome {
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    z-index: 1; }
+    .home-page-wrap .home-page-welcome .welcome-wrap {
+      padding: 80px 0;
+      max-width: 1280px;
+      margin: 0 auto; }
+      .home-page-wrap .home-page-welcome .welcome-wrap .welcome-header {
+        margin-bottom: 30px; }
+      .home-page-wrap .home-page-welcome .welcome-wrap .welcome-text {
+        line-height: 29px;
+        font-size: 16px;
+        padding: 0 20px; }
+  .home-page-wrap .home-page-platform {
+    position: relative;
+    background-color: #ebf2f2;
+    overflow: hidden; }
+    .home-page-wrap .home-page-platform .platform-wrap {
+      padding: 80px 0;
+      max-width: 1280px;
+      margin: 0 auto; }
+      .home-page-wrap .home-page-platform .platform-wrap .platform-header {
+        margin-bottom: 60px; }
+      .home-page-wrap .home-page-platform .platform-wrap .platform-steps {
+        display: flex;
+        justify-content: space-between; }
+        .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step {
+          width: 23%;
+          padding: 0 20px; }
+          .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step:first-child .platform-step-number:before {
+            content: '';
+            position: absolute;
+            left: -3333px;
+            width: 3333px;
+            height: 1px;
+            background: #2d2d2d;
+            top: 49px; }
+          .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step:last-child .platform-step-number:after {
+            content: '';
+            position: absolute;
+            right: -3333px;
+            width: 3333px;
+            height: 1px;
+            background: #2d2d2d;
+            top: 49px; }
+          .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step .platform-step-number-wrap {
+            margin-bottom: 40px; }
+            .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step .platform-step-number-wrap .platform-step-number {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #ffffff;
+              background: #2d2d2d;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              margin: 0 auto;
+              font-size: 36px;
+              position: relative; }
+              .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step .platform-step-number-wrap .platform-step-number .arrow-right {
+                position: absolute;
+                width: 100%;
+                right: -100%;
+                top: 49px;
+                height: 1px;
+                background: #2d2d2d; }
+                .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step .platform-step-number-wrap .platform-step-number .arrow-right:after {
+                  content: '';
+                  position: absolute;
+                  width: 26px;
+                  height: 26px;
+                  border-right: 1px solid #2d2d2d;
+                  border-bottom: 1px solid #2d2d2d;
+                  right: 5px;
+                  top: -13px;
+                  transform: rotateZ(-45deg); }
+          .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step .platform-step-text {
+            font-size: 30px;
+            color: #2d2d2d;
+            text-align: center;
+            font-weight: 300; }
+    .home-page-wrap .home-page-platform .platform-img-wrap {
+      margin-bottom: -3px;
+      text-align: center; }
+      .home-page-wrap .home-page-platform .platform-img-wrap .platform-img {
+        width: 100%;
+        max-width: 2880px; }
+
+@media screen and (max-width: 992px) {
+  .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step .platform-step-text {
+    font-size: 20px; } }
+
+@media screen and (max-width: 772px) {
+  .home-page-wrap .home-page-platform {
+    position: relative;
+    background-color: #ebf2f2;
+    overflow: hidden; }
+    .home-page-wrap .home-page-platform .platform-wrap .platform-steps {
+      flex-flow: wrap; }
+      .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step {
+        margin-bottom: 40px;
+        width: 50%; }
+        .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step .platform-step-number-wrap .platform-step-number .arrow-right {
+          width: 10vw;
+          right: -10vw; } }
+
+.static-map {
+  display: none; }
+
+.static-header-form {
+  align-self: center;
+  margin-left: 70px; }
+  .static-header-form > .search-form .search-form-input {
+    height: 30px;
+    font-size: 14px; }
+  .static-header-form > .search-form .search-form-btn {
+    background-size: 30px;
+    height: 30px;
+    width: 30px; }
+  .static-header-form.form-hidden {
+    display: none; }
+
+@media screen and (max-width: 640px) {
+  .home-page-wrap .home-page-main .main-wrap {
+    padding-bottom: 0; }
+    .home-page-wrap .home-page-main .main-wrap .main-title {
+      margin-bottom: 80px;
+      font-size: 40px; } }
+
+@media screen and (max-width: 480px) {
+  .home-page-wrap .home-page-platform .platform-wrap .platform-steps .platform-step {
+    width: 100%; }
+  .home-page-main-form {
+    display: none; } }

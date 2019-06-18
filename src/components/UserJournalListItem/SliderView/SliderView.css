@@ -1,0 +1,57 @@
+.slider-view .slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.slider-view .slide .content-image,
+.slider-view .slide .content-video{
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.slick-slider,
+.slick-slider *{
+  outline: none;
+}
+
+.slider-view.slick-arrow {
+  width: 32px;
+  height: 32px;
+  z-index: 2;
+}
+
+.slider-view.slick-arrow:before {
+  content: "";
+}
+
+.slick-prev:before, .slick-next:before{
+  color: #008FB7;
+}
+
+
+.modal-dialog img {
+  display: block;
+  width: 100%;
+}
+
+.modal-dialog .modal-body {
+  padding: 0;
+}
+
+.modal-dialog .modal-body button {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.slider-view .modal-dialog .modal-body button img {
+  width: 32px;
+}

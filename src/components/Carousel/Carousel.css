@@ -1,0 +1,16 @@
+.carousel {
+  margin-bottom: 15px; }
+  .carousel .carousel-slide-container {
+    height: 400px;
+    width: 100%;
+    background-color: #003E50;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .carousel .carousel-slide-img, .carousel .carousel-slide-video {
+    width: initial;
+    height: initial;
+    max-height: 100%;
+    max-width: 100%; }
+  .carousel .carousel-slide-video {
+    max-width: 85%; }

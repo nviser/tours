@@ -1,0 +1,185 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/common.scss";
+
+.board-page {
+  .board-page-wrap {
+    &.merchant-page {
+      min-height: calc(100vh - 136px);
+    }
+  }
+}
+  .merchant-account {
+    .cancel-btn {
+      @include regularBtn(#F15B59, #F15B59, transparent, transparent, none, 0, 131px, 49px);
+      font-weight: normal;
+      text-transform: capitalize;
+      font-size: 15px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .success-btn {
+      @include regularBtn(#fff, #fff, #7BC372, #6AA962, none, 3px, 161px, 49px);
+      &:disabled {
+        background: #CECECE;
+        cursor: not-allowed;
+      }
+    }
+    &-container {
+      max-height: 1205px;
+      height: 300px;
+      max-width: 970px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .tour-operator-form {
+        width: 100%;
+        max-width: 742px;
+        input {
+          min-width: 350px;
+          outline: none;
+          border: 1px solid #E3E3E3;
+          border-radius: 2px;
+          padding: 0 10px;
+          height: 41px;
+          width: 100%;
+          font-family: $font_roboto;
+          font-weight: 300;
+          color: $color_text;
+          font-size: 16px;
+          line-height: 19px;
+          @media(max-width: 1060px) {
+            min-width: 80px;
+            width: 320px;
+          }
+          @media(max-width: 928px) {
+            min-width: 80px;
+            width: 100%;
+          }
+          &::placeholder {
+            color: #d6d6d6;
+          }
+          &:focus {
+            border-bottom: 1px solid #E3E3E3;
+          }
+        }
+        @media(max-width: 928px) {
+          margin: 0 auto;
+        }
+        .auth-label, .modal-sign-in-label {
+          color: $gray-01;
+          font-size: 12px;
+          font-weight: 300;
+          letter-spacing: 0.11px;
+          line-height: 14px;
+          margin-bottom: 2px;
+        }
+        .modal-sign-in-warn-message {
+          font-size: 14px;
+          color: #F15B59 !important;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+      @media(max-width: 991px) {
+        margin-top: 30px;
+      }
+      &.business-info {
+        .tour-operator-form {
+          margin: 0 auto;
+          &--row {
+            display: flex;
+            justify-content: space-between;
+            @media(max-width: 600px) {
+              display: block;
+            }
+          }
+        }
+
+        .merchant-redirect {
+          color: #272727;
+          font-size: 20px;
+          letter-spacing: 0.64px;
+        }
+      }
+    }
+    .tour-operator-btn--container {
+      justify-content: flex-end;
+      margin-bottom: 0;
+      .btn-block {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+      }
+      &.spaced {
+        justify-content: space-between;
+      }
+    }
+    .merchant-account-sharing {
+      margin-top: 30px;
+      padding: 40px 30px;
+      border-radius: 4px;
+      background: #ffffff;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+      .sharing-container {
+        margin: 0 auto;
+        max-width: 742px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    .business-checkbox {
+      #business {
+        display: none;
+      }
+      .auth-label {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 41px;
+        margin-bottom: 0;
+        margin-top: 16px;
+      }
+      .checkmark {
+        width: 12px;
+        height: 12px;
+        border: 1px solid #C6C6C6;
+        display: block;
+        cursor: pointer;
+        margin-right: 5px;
+        position: relative;
+        &.active {
+          background: #45A1E4;
+          border: none;
+        }
+        &:before {
+          position: absolute;
+          content: '';
+          top: 2px;
+          left: 7px;
+          width: 1px;
+          height: 8px;
+          background: #FFFFFF;
+          transform: rotateZ(45deg);
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          top: 5px;
+          left: 3px;
+          width: 1px;
+          height: 4px;
+          background: #FFFFFF;
+          transform: rotateZ(-45deg);
+        }
+      }
+    }
+  }
+
+

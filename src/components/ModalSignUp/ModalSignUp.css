@@ -1,0 +1,11 @@
+@import url(../../components/ModalSignUp/ModalSignUp.css);
+.modal-dialog .modal-content .modal-body .modal-input-wrap {
+  display: flex;
+  justify-content: space-between; }
+  .modal-dialog .modal-content .modal-body .modal-input-wrap .halved-inputs {
+    width: 100%; }
+    .modal-dialog .modal-content .modal-body .modal-input-wrap .halved-inputs:first-child {
+      margin-right: 15px; }
+
+.modal-dialog .modal-content .modal-body .modal-sign-in-input.input-halved {
+  width: 50%; }

@@ -1,0 +1,15 @@
+.user-account {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #979797; }
+  .user-account .user-account-form .input-wrap {
+    position: relative; }
+    .user-account .user-account-form .input-wrap .set-edit-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      padding: 0 5px; }

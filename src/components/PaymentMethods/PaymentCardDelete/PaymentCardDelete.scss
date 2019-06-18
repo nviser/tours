@@ -1,0 +1,63 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/common.scss";
+
+.Modal {
+    border-radius: 5px;
+}
+.tour-stop-delete {
+    padding: 30px;
+    height: 295px;
+    width: 543px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .tour-stop-delete-title {
+        color: $color_text;
+        font-size: 20px;
+        letter-spacing: 0.64px;
+        line-height: 19px;
+        font-family: $font_roboto;
+    }
+    .tour-stop-delete-description {
+        color: $color_text;
+        font-size: 18px;
+        letter-spacing: 0.21px;
+        line-height: 21px;
+    }
+    .stop-bottom {
+        display: flex;
+        justify-content: flex-end;
+        box-shadow: none;
+        padding: 0;
+        height: fit-content;
+        .btn-back {
+            @include regularBtn(#008FB7, #008FB7, transparent, transparent, none, 0, 131px, 49px);
+            font-weight: normal;
+            text-transform: capitalize;
+            font-size: 15px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .btn-next {
+            @include regularBtn(#fff, #fff, #7BC372, #6AA962, none, 3px, 131px, 49px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Modal {
+        min-width: 543px;
+        left: calc(50% - 271px);
+    }
+}
+@media (max-width: 580px) {
+    .Modal {
+        width: calc( 100% - 20px);
+        min-width: 0;
+        left: 10px;
+        .tour-stop-delete {
+            width: 100%;
+        }
+    }
+}

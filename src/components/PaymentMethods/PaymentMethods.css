@@ -1,0 +1,57 @@
+.payment-methods {
+  display: flex;
+  flex-direction: column; }
+  .payment-methods-wrapper {
+    min-height: calc(100vh - 80px); }
+    .payment-methods-wrapper .tour-stop-delete .tour-stop-delete-title {
+      margin-top: 0; }
+  .payment-methods-container {
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .payment-methods-container {
+        padding: 30px 0 0 0; }
+        .payment-methods-container .show-grid .right-col {
+          padding: 0 15px; }
+          .payment-methods-container .show-grid .right-col .create-payment-method-back {
+            display: none; }
+          .payment-methods-container .show-grid .right-col .create-payment-form {
+            margin: 0;
+            padding: 15px; }
+            .payment-methods-container .show-grid .right-col .create-payment-form .edit-card-number,
+            .payment-methods-container .show-grid .right-col .create-payment-form .default-toggler,
+            .payment-methods-container .show-grid .right-col .create-payment-form .create-payment-method-card-date {
+              width: 100%; } }
+  .payment-methods-header {
+    color: #272727;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    line-height: 19px; }
+  .payment-methods-description {
+    color: #003E50;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 10px;
+    max-width: 700px; }
+  .payment-methods-cards {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap; }
+
+@media (max-width: 991px) {
+  .payment-methods-block {
+    padding: 20px 15px; } }
+
+@media screen and (max-width: 768px) {
+  .payment-methods-block {
+    padding: 0 15px; }
+    .payment-methods-block .payment-methods-cards {
+      margin: 0; }
+      .payment-methods-block .payment-methods-cards .payment-card {
+        margin: 0 0 15px 0;
+        height: 145px;
+        width: 100%; } }

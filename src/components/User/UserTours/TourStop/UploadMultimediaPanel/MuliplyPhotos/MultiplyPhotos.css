@@ -1,0 +1,7 @@
+.upload-photos {
+  height: 89px;
+  width: 120px;
+  cursor: pointer; }
+  .upload-photos img {
+    height: 100%;
+    width: 100%; }

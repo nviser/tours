@@ -1,0 +1,23 @@
+.multi-panel {
+  margin-top: 30px; }
+  .multi-panel-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; }
+    .multi-panel-header-title {
+      font-size: 12px;
+      letter-spacing: 0.13px;
+      line-height: 16px;
+      color: #8e8e8e;
+      font-weight: 300;
+      margin-bottom: 5px; }
+  .multi-panel-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; }
+  .multi-panel-once {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .multi-panel-once .upload-video {
+      margin-bottom: 20px; }

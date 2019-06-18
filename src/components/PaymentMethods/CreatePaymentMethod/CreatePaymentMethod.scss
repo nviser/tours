@@ -1,0 +1,364 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/common.scss";
+
+$width: 444px;
+.create-payment-method {
+  min-height: 100%;
+  &-back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  @media (max-width: 1280px) {
+    .right-col {
+      padding-left: 0;
+    }
+  }
+  .create-payment-goBack {
+    color: #008fb7;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.48px;
+    line-height: 19px;
+    margin-left: 10px;
+  }
+  .add-methods-details {
+    color: $color_text;
+    font-family: $font_roboto;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.64px;
+    line-height: 19px;
+    margin-bottom: 40px;
+  }
+  .create-payment-form {
+    margin-top: 30px;
+    min-height: 490px;
+    max-width: 969px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    .form-block {
+      margin-bottom: 30px;
+    }
+    .alert {
+      width: $width;
+    }
+    .edit-card-number {
+      max-width: $width;
+      width: 100%;
+      position: relative;
+      .card-img {
+        width: 48px;
+        height: 29px;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+      }
+      &.read-only {
+        .regular-label {
+          color: $gray-01;
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 0.13px;
+          line-height: 16px;
+          position: relative;
+          top: 20px;
+        }
+      }
+    }
+    .form-control-group {
+      max-width: $width;
+      margin-bottom: 0;
+      &.form-block {
+        margin-bottom: 30px;
+      }
+      #cardNumber, #month, #year, #cvv {
+        &:disabled {
+          background: #ffffff;
+        }
+      }
+      &.update-method {
+        .auth-label {
+          position: relative;
+          bottom: -20px;
+          .modal-sign-in-label {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.13px;
+            line-height: 16px;
+            font-family: $font_roboto;
+          }
+        }
+        .create-payment-input {
+          border: none;
+          border-bottom: 1px solid #E3E3E3;
+          &:disabled {
+            background: #ffffff;
+          }
+        }
+        & ~ .card-img {
+          top: 15px;
+        }
+      }
+      .modal-sign-in-label {
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0.11px;
+        line-height: 14px;
+      }
+    }
+    input {
+      outline: none;
+      border: 1px solid #E3E3E3;
+      border-radius: 2px;
+      padding: 0 10px;
+      height: 41px;
+      width: 100%;
+      font-family: $font_roboto;
+      font-weight: 300;
+      color: $color_text;
+      font-size: 16px;
+      line-height: 19px;
+      &::placeholder {
+        color: #d6d6d6;
+      }
+    }
+    .button-block {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 90px;
+      &.right {
+        justify-content: flex-end;
+      }
+      .button-main {
+        height: 49px;
+        width: 131px;
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: #008db3;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: $font_roboto;
+      }
+      .del-card {
+        @include regularBtn(#008FB7, #008FB7, transparent, transparent, none, 0, 131px, 49px);
+        font-weight: normal;
+        text-transform: capitalize;
+        font-size: 15px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .save-card {
+        @include regularBtn(#fff, #fff, #7BC372, #6AA962, none, 3px, 131px, 49px);
+        &:disabled {
+          background: #CECECE;
+          cursor: not-allowed;
+        }
+      }
+    }
+    .button-block.right {
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+    .default-toggler {
+      margin-bottom: 20px;
+      width: $width;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .toggle-text {
+        font-size: 13px;
+        line-height: 15px;
+        color: $color_blue;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+      }
+      .react-toggle {
+        margin-right: 5px;
+        transform: scale(0.75);
+        .react-toggle-track {
+          background: none;
+          border: 2px solid $gray-01;
+        }
+        &:hover {
+          .react-toggle-track {
+            background: none;
+          }
+        }
+        &.react-toggle--checked {
+          .react-toggle-track {
+            background: $color_blue;
+            border: 1px solid $color_blue;
+          }
+          .react-toggle-thumb {
+            border: 1px solid $color_blue;
+            box-shadow: none;
+            right: 1px;
+          }
+          &.react-toggle--focus {
+            box-shadow: none;
+            .react-toggle-thumb {
+              border: 1px solid $color_blue;
+              right: 1px;
+            }
+          }
+        }
+        &.react-toggle--focus {
+          box-shadow: none;
+          .react-toggle-thumb {
+            border: 2px solid $gray-01;
+            box-shadow: none;
+          }
+        }
+        .react-toggle-thumb {
+          border: 2px solid $gray-01;
+        }
+      }
+    }
+  }
+
+  .create-payment-method-card-date {
+    display: flex;
+    max-width: $width;
+    input {
+      max-width: 128px;
+
+    }
+    .form-control-group {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .tour-toggle-block, .tour-preview-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid $color_divider;
+    width: 180px;
+    margin: 15px 0;
+    .tg-status, a {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 18px;
+      color: $color_blue;
+      text-transform: uppercase;
+    }
+  }
+
+  .tour-toggle-block {
+    flex-direction: column;
+
+    .toggler {
+      cursor: pointer;
+      width: 40px;
+      height: 20px;
+      border-radius: 10px;
+      position: relative;
+      background: $color_blue;
+      .grip {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #ffffff;
+      }
+      &.inactive {
+        background: #ffffff;
+      }
+    }
+    .tg-status {
+      margin-top: 10px;
+    }
+  }
+  .create-payment-method-back {
+    .go-back-btn {
+      @include socialBtn(#008FB7, transparent, none, 15px, 0);
+      font-family: $font_roboto;
+      font-size: 15px;
+      line-height: 18px;
+      img {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+  .modal-sign-in-warn-message {
+    font-size: 14px;
+    color: #F15B59 !important;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .create-payment-method-back {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  .create-payment-form {
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .static-header-form{
+    display: none
+  }
+  .payment-methods-container .show-grid .right-col .create-payment-form {
+    .edit-card-number, .create-payment-method-card-date {
+      width: $width;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .create-payment-form {
+    .form-control-group {
+      width: 100%;
+    }
+  }
+  .create-payment-method-card-date {
+    width: 100%;
+    .form-control-group {
+      margin-right: 20px;
+    }
+  }
+  .create-payment-form {
+    .default-toggler,
+    .button-block {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .payment-methods-container .show-grid .right-col .create-payment-form {
+    .edit-card-number, .create-payment-method-card-date {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .create-payment-form .form-control-group.update-method .auth-label {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,84 @@
+@import "../../assets/scss/variables.scss";
+
+.modal-dialog {
+  .modal-content {
+    background: none;
+    .modal-header {
+      background: $color_main;
+      font-size: 25px;
+      font-weight: 300;
+      color: #ffffff;
+      text-align: center;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    .modal-body {
+      background: #ffffff;
+      .form-control-group {
+        margin: 5px 0;
+      }
+      .modal-sign-in-label {
+        color: #8E8E8E;
+        font-size: 11px;
+        font-weight: 500;
+        padding-left: 10px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .modal-sign-in-input {
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid #979797;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        outline: none;
+        &.error {
+          border-color: $color_error;
+        }
+      }
+      .modal-sign-in-warn-message {
+        font-size: 11px;
+        display: none;
+        margin-top: -5px;
+        padding-left: 10px;
+        &.error {
+          display: block;
+        }
+      }
+      .btn-toolbar {
+        margin-left: 0;
+
+        button {
+          text-transform: uppercase;
+          color: #ffffff;
+          margin-bottom: 10px;
+          margin-left: 0;
+          width: 45%;
+          &.linked-in {
+            margin-bottom: 0;
+          }
+          .glyphicon {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .modal-footer {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      background: #ffffff;
+      border-top: 1px solid $color_main;
+      button {
+        width: 100%;
+        background: $color_main;
+        border: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+        height: 40px;
+      }
+    }
+  }
+}
+

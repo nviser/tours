@@ -1,0 +1,65 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/common.scss";
+.side-panel-mobile-group{
+  z-index: 1000;
+  position: relative;
+  display: none;
+  margin-bottom: 30px;
+  @media screen and (max-width: 768px){
+    display: block;
+  }
+  .side-panel-backdrop{
+    display: none;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
+    &.visible{
+      display: block;
+    }
+  }
+  .side-panel-mobile {
+    font-family: $font_roboto;
+    position: relative;
+    z-index: 1;
+    .panel-mobile-options{
+      display: none;
+      position: absolute;
+      top:100%;
+      left:0;
+      width: 100%;
+      z-index: 1;
+      &.visible{
+        display: block;
+      }
+      .side-panel-nav-item{
+        border-radius: 0;
+        box-shadow: none;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #e8e8e8;
+        &.active{
+          border-bottom-color: $info;
+        }
+        &.merchant-register,
+        &.create-tour{
+          //todo
+        }
+      }
+    }
+    .side-panel-nav-item{
+      box-shadow: $shadow;
+      border-radius: 3px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      &.toggle-menu{
+        justify-content: space-between;
+      }
+    }
+  }
+}

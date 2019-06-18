@@ -1,0 +1,59 @@
+@import "../../../assets/scss/variables.scss";
+
+.post-component {
+  &.selected {
+    border-color: $color_main;
+    border-width: 2px;
+  }
+  .show-grid {
+    display: flex;
+    align-items: center;
+    &.row .badge {
+      background-color: #008fb7;
+    }
+  }
+  .page-header {
+    margin: 20px 0 10px;
+    border-bottom: none;
+  }
+  .post-component-property-location {
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #525252;
+    &:hover {
+      text-decoration: none;
+    }
+    .map-marker {
+      margin-right: 5px;
+    }
+  }
+  .post-type {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 10px;
+    margin-bottom: 5px;
+    color: $color_main_header;
+    text-align: right;
+  }
+  .user-img {
+    width: 70px;
+  }
+  .panel-body {
+    font-size: 13px;
+    line-height: 18px;
+    white-space: pre-line;
+    .doc-info-header {
+      padding: 10px 0 5px;
+      font-size: 11px;
+    }
+    strong {
+      font-weight: 700;
+      font-size: 11px;
+    }
+  }
+  .panel-footer {
+    font-size: 12px;
+  }
+}

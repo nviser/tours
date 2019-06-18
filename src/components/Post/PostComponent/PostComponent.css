@@ -1,0 +1,49 @@
+.post-component.selected {
+  border-color: #003E50;
+  border-width: 2px; }
+
+.post-component .show-grid {
+  display: flex;
+  align-items: center; }
+  .post-component .show-grid.row .badge {
+    background-color: #008fb7; }
+
+.post-component .page-header {
+  margin: 20px 0 10px;
+  border-bottom: none; }
+
+.post-component .post-component-property-location {
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #525252; }
+  .post-component .post-component-property-location:hover {
+    text-decoration: none; }
+  .post-component .post-component-property-location .map-marker {
+    margin-right: 5px; }
+
+.post-component .post-type {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 10px;
+  margin-bottom: 5px;
+  color: #2d2d2d;
+  text-align: right; }
+
+.post-component .user-img {
+  width: 70px; }
+
+.post-component .panel-body {
+  font-size: 13px;
+  line-height: 18px;
+  white-space: pre-line; }
+  .post-component .panel-body .doc-info-header {
+    padding: 10px 0 5px;
+    font-size: 11px; }
+  .post-component .panel-body strong {
+    font-weight: 700;
+    font-size: 11px; }
+
+.post-component .panel-footer {
+  font-size: 12px; }

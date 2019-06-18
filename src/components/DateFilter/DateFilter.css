@@ -1,0 +1,20 @@
+.filter-panel .show-grid {
+  display: flex;
+  align-items: center; }
+
+.filter-panel .picker-title {
+  font-size: 13px; }
+
+.filter-panel .picker-start-date, .filter-panel .picker-end-date {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #adadad;
+  padding: 6px; }
+
+.filter-panel .btn-toolbar .btn-group {
+  width: 100%; }
+  .filter-panel .btn-toolbar .btn-group .btn-default {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }

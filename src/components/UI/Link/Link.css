@@ -1,0 +1,13 @@
+.print-history-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: #008FB7; }
+  .print-history-link i {
+    font-size: 16px; }
+  .print-history-link span {
+    text-transform: uppercase;
+    margin-left: 5px;
+    text-decoration: underline; }

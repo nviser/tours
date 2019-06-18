@@ -1,0 +1,45 @@
+@import "../../../assets/scss/variables.scss";
+
+.user-settings, .company-settings {
+  font-family: 'Roboto', sans-serif;
+  .user-edit-section, .company-edit-section {
+      padding-bottom: 10px;
+      border-bottom: 2px solid $color_divider;
+    .user-edit-form, .company-edit-form {
+      .input-wrap {
+        position: relative;
+        .set-edit-button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 11px;
+          padding: 0 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    #formControlsText {
+      color: $color_main;
+    }
+  }
+  .user-settings-header, .company-settings-header {
+    font-size: 20px;
+    font-weight: 900;
+    color: #272727;
+    line-height: 19px;
+    margin: 20px 0;
+  }
+  .user-settings-label, .company-settings-label {
+    text-transform: uppercase;
+    color: #8E8E8E;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+}

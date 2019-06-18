@@ -1,0 +1,58 @@
+@import "../../../../../assets/scss/common.scss";
+
+.favorite-tours {
+    &-modal{
+        padding: 30px;
+        height: 295px;
+        width: 543px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-title {
+        text-transform: uppercase;
+        color: #272727;	
+        font-family: Roboto;
+        line-height: 36px;
+        font-size: 20px;
+        letter-spacing: 0.64px;
+        margin-top: 75px;
+        text-align: center;
+    }
+    &-description {
+        color: #272727;	
+        font-family: Roboto;	 
+        letter-spacing: 0.21px;	
+        line-height: 21px;
+        margin-top: 40px;
+        max-width: 500px;
+        font-size: 18px;
+    }
+    &-bottom {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 45px;
+        .success-btn {
+            @include successBtn(#7BC372);
+        }
+        .cancel-btn {
+            @include cancelBtn(#F15B59);
+            margin-right: 30px;
+            
+        }
+
+    } 
+    
+}
+
+@media (max-width: 580px) {
+    .favorite-tours {
+        &-modal{
+            width: 100%;
+        }
+        &-title {
+            margin-top: 55px;
+        }
+    }
+}

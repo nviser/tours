@@ -1,0 +1,82 @@
+$color_main: #003E50;
+$color_main2: #006680;
+$color_main_hover: #027590;
+$color_main_header: #2d2d2d;
+$color_text_regular: #525252;
+$color_text: #272727;
+$color_error: #f7b8b2;
+$color_warn: #C93C00;
+$color_blue: #007fa2;
+$color_blue_1: #008FB7;
+$color_blue_2: #45A1E4;
+$color_green: #2C855A;
+$color_purple: #964CBE;
+$color_divider: #c6c6c6;
+$color_fb: #4267B2;
+$color_google: #eeeeee;
+$shadow: 0 0 10px 0 rgba(0,0,0,0.11);
+$background: #f5f5f5;
+$color_steel_blue: #4772FF;
+
+$radius-main: 4px;
+
+$default:           #1a1b1c;
+$default-07:        #4b62aa;
+$default-08:        #656c79;
+$headers:           #2e3e53;
+$success:           #4fb051;
+$primary:           #1c54d0;
+$gray:              #b5b8be;
+$gray-00:           #f3f6fa;
+$gray-01:           #8e8e8e;
+$gray-02:           #e8e8e8;
+$gray-03:           #c5c8c8;
+$gray-04:           #f6f6f6;
+$gray-05:           #b5b8be;
+$gray-08:           #787e8b;
+$gray-09:           #333437;
+$gray-silver:       #e3e6e9;
+$gray-light:        #f7f7f7;
+$grey-pale:         #f0f4f9;
+$danger: 		    #ff7684;
+$warning: 		    #ffee39;
+$info:              #00c6ff;
+$mobile:            #16ADD7;
+$none:              transparent;
+
+$primary-secondary:        #3a83e5;
+$primary-secondary-start:  #587ae5;
+$primary-secondary-end:    #6a86de;
+$primary-end:              #2d6cdb;
+
+$font-size-xs:       10px;
+$font-size-smx:      12px;
+$font-size-sm:       14px;
+$font-size-md:       16px;
+$font-size-lg:       18px;
+$h0:                 50px;
+$h1:                 30px;
+$h2:                 22px;
+$h3:                 20px;
+$font-size-default:  $font-size-sm;
+$baseFontFamily: 'Source Sans Pro', sans-serif, 'Arial', 'Roboto';
+$font_roboto: 'Roboto', sans-serif;
+$font-thin:          100;
+$font-light:         300;
+$font-regular:       400;
+$font-semi-bold:     600;
+$font-bold:          700;
+
+$text-up:           uppercase;
+$text-cap:          capitalize;
+$text-low:          lowercase;
+$text-nor:          normal;
+
+// Media
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+$screen-lg-min: 1200px;
+$screen-lg-max: 1400px;

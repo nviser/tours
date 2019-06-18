@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="30" cy="30" r="30"></circle>
+        <filter x="-2.5%" y="-2.5%" width="105.0%" height="105.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.112460371 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="0.000101243261 0.08 29.9852 0.08 29.9852 44 0.000101243261 44"></polygon>
+    </defs>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tours-History" transform="translate(-480.000000, -210.000000)">
+            <g id="Group-9" transform="translate(451.000000, 175.000000)">
+                <g id="Group-12" transform="translate(29.000000, 35.000000)">
+                    <g id="Group-2">
+                        <g id="Group-20">
+                            <g id="Group-21">
+                                <g id="Oval">
+                                    <use fill="#F5F5F5" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                </g>
+                                <g id="Group-6" transform="translate(15.000000, 9.000000)">
+                                    <path d="M15.203456,37 L13.3714475,34.6692292 C11.8174543,32.6908289 4.0603446,22.5124505 4.0006838,16.4739197 C3.93359051,9.65678361 8.81231756,4.06083493 14.8784352,4.000492 C20.9445529,3.94014907 25.9325576,9.43821709 25.9996509,16.2551514 C26.0591109,22.2936822 18.5042854,32.6244315 16.9894635,34.6331042 L15.203456,37 Z" id="Fill-1" fill="#4090B9"></path>
+                                    <g id="Group-5">
+                                        <mask id="mask-4" fill="white">
+                                            <use xlink:href="#path-3"></use>
+                                        </mask>
+                                        <g id="Clip-4"></g>
+                                    </g>
+                                </g>
+                            </g>
+                            <path d="M29.91502,17.86564 C26.10422,17.90324 23.03882,21.46004 23.08162,25.79444 C23.10602,28.25564 25.99802,33.74684 30.12722,39.30004 C34.14462,33.66724 36.92822,28.11904 36.90382,25.65764 C36.86082,21.32324 33.72562,17.82804 29.91502,17.86564 Z M30.26262,53.00004 L25.30742,46.72364 C22.23122,42.82444 15.07122,32.99024 15.00102,25.87444 C14.91022,16.69564 21.56122,9.16244 29.82802,9.08064 C38.09462,8.99884 44.89402,16.39884 44.98482,25.57764 C45.05502,32.69364 38.09122,42.66764 35.09442,46.62584 L30.26262,53.00004 Z" id="Fill-3" fill="#8CD2E8"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

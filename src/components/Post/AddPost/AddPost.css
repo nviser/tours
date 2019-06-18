@@ -1,0 +1,84 @@
+.add-post-component .panel-heading img {
+  width: 70px; }
+
+.add-post-component .user-story-textarea {
+  border: none;
+  box-shadow: none;
+  height: 40px; }
+
+.add-post-component .form-group-story {
+  margin-bottom: 0; }
+
+.add-post-component .page-header {
+  margin: 20px 0 10px;
+  border-bottom: none; }
+
+.add-post-component .panel-body .btn-toolbar {
+  margin-bottom: 10px; }
+  .add-post-component .panel-body .btn-toolbar .btn {
+    outline: none; }
+    .add-post-component .panel-body .btn-toolbar .btn .glyphicon {
+      margin-right: 5px; }
+
+.add-post-component .panel-body .form-control {
+  margin-bottom: 10px; }
+
+.add-post-component .show-grid {
+  display: flex;
+  align-items: center; }
+  .add-post-component .show-grid .btn-primary {
+    border: none;
+    background-color: #003E50;
+    font-weight: bold; }
+
+.add-post-component .btn-toolbar .btn-default {
+  border-radius: 30px;
+  font-size: 10px; }
+
+.add-post-component .picker-occured-date {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #adadad;
+  padding: 6px;
+  outline: none; }
+
+.add-post-component textarea {
+  resize: none; }
+
+.add-post-component .react-autosuggest__input {
+  width: 100%;
+  padding: 0 10px 0 25px; }
+  .add-post-component .react-autosuggest__input::placeholder {
+    color: #525252; }
+
+.add-post-component .location-selector {
+  position: relative; }
+  .add-post-component .location-selector .map-marker {
+    position: absolute;
+    z-index: 1;
+    transform: translateY(50%);
+    left: 5px;
+    top: 0;
+    color: #272727; }
+
+.add-post-component .Select {
+  font-size: 14px; }
+  .add-post-component .Select.is-focused:not(.is-open) > .Select-control {
+    border: none;
+    box-shadow: unset; }
+  .add-post-component .Select .Select-control {
+    height: 30px;
+    border: none; }
+    .add-post-component .Select .Select-control:focus {
+      box-shadow: unset; }
+    .add-post-component .Select .Select-control .Select-input {
+      height: 30px; }
+      .add-post-component .Select .Select-control .Select-input > input {
+        line-height: 15px; }
+    .add-post-component .Select .Select-control .Select-placeholder {
+      line-height: 30px; }
+  .add-post-component .Select .Select-value {
+    line-height: 30px; }
+  .add-post-component .Select.type-select.atop .Select-menu-outer {
+    top: unset;
+    bottom: 30px; }

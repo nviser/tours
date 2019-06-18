@@ -1,0 +1,80 @@
+.route-stop-point .container {
+  width: 100%;
+  padding: 0; }
+
+.route-stop-point .point-data {
+  user-select: none;
+  background: #f2f2f2; }
+  .route-stop-point .point-data.margin {
+    margin-bottom: 50px; }
+
+.route-stop-point .point-measure .point-unit {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  color: #8e8e8e; }
+  .route-stop-point .point-measure .point-unit .glyphicon {
+    margin-right: 10px; }
+
+.route-stop-point .point-measure .pseudo-dashed-border {
+  position: relative; }
+  .route-stop-point .point-measure .pseudo-dashed-border:before {
+    content: '';
+    height: 100%;
+    width: 1px;
+    border-left: 1px dashed #003E50;
+    position: absolute;
+    top: 0;
+    left: -15px; }
+
+.route-stop-point .point-title,
+.route-stop-point .point-building-name {
+  display: flex;
+  align-items: center;
+  min-height: 50px; }
+
+.route-stop-point .point-content .point-header {
+  user-select: none;
+  text-transform: uppercase;
+  color: #8E8E8E;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  max-width: 268px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.route-stop-point .point-content .point-text {
+  color: #003E50;
+  font-size: 15px;
+  font-weight: bold; }
+
+.route-stop-point .point-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 67px;
+  background: #003E50;
+  min-width: 70px;
+  color: #e6e6e6; }
+  .route-stop-point .point-icon .glyphicon {
+    font-size: 20px; }
+
+.route-stop-point .point-edit {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  position: relative;
+  cursor: pointer;
+  color: #8e8e8e; }
+  .route-stop-point .point-edit:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 40px;
+    width: 1px;
+    background: #8e8e8e; }

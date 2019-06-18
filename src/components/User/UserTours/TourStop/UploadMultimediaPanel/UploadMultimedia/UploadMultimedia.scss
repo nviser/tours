@@ -1,0 +1,15 @@
+@import '../../../../../../assets/scss/common.scss';
+
+.upload-video { 
+    cursor: pointer;
+    img {
+        height: 127px!important;
+        width: 142px!important;
+        border-radius: 0!important;
+        object-fit: cover;
+    }
+    .upload-multimedia-image {
+        @include uploadInput;
+        
+    }
+}

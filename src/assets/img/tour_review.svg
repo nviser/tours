@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 22@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="31.5" cy="31.5" r="31.5"></circle>
+        <filter x="-2.4%" y="-2.4%" width="104.8%" height="104.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.112460371 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tours-History" transform="translate(-1046.000000, -210.000000)">
+            <g id="Group-9" transform="translate(451.000000, 175.000000)">
+                <g id="Group-13" transform="translate(595.000000, 35.000000)">
+                    <g id="Group-22">
+                        <g id="Group-2-Copy-5">
+                            <g id="Group-19">
+                                <g id="Oval">
+                                    <use fill="#F5F5F5" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                </g>
+                                <path d="M51,26.3383743 C51,26.758034 50.6953125,27.1543793 50.390625,27.4574669 L41.8828125,35.710775 L43.8984375,47.3679899 C43.921875,47.5311909 43.921875,47.6710775 43.921875,47.8342785 C43.921875,48.4637681 43.640625,49 42.9609375,49 C42.6328125,49 42.3046875,48.8834279 42.0234375,48.7202268 L31.5,43.2180214 L20.9765625,48.7202268 C20.671875,48.8834279 20.3671875,49 20.0390625,49 C19.359375,49 19.0546875,48.4404537 19.0546875,47.8342785 C19.0546875,47.6710775 19.078125,47.5311909 19.1015625,47.3679899 L21.1171875,35.710775 L12.5859375,27.4574669 C12.3046875,27.1543793 12,26.758034 12,26.3383743 C12,25.6389414 12.7265625,25.3591682 13.3125,25.2659105 L25.078125,23.5639572 L30.3515625,12.9558916 C30.5625,12.5129175 30.9609375,12 31.5,12 C32.0390625,12 32.4375,12.5129175 32.6484375,12.9558916 L37.921875,23.5639572 L49.6875,25.2659105 C50.25,25.3591682 51,25.6389414 51,26.3383743 Z" id="Star-Outlined---FontAwesome" fill="#8CD2E8"></path>
+                            </g>
+                        </g>
+                        <g id="Group-3" transform="translate(12.000000, 12.000000)"></g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

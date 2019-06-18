@@ -1,0 +1,59 @@
+@import "../../../../../assets/scss/variables.scss";
+
+.card {
+    // width: 270px;	
+    margin-bottom: 20px;
+    border-radius: 5px;	
+    background-color: #FFFFFF;	
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.11);
+    padding: 35px;
+    margin-right: 5px;
+    
+    &-number {
+        color: #272727;	
+        font-family: Roboto;	
+        font-size: 20px;	
+        font-weight: bold;	
+        line-height: 17px;
+    }
+    &-expired {
+        color: #272727;	
+        font-family: Roboto;	
+        font-size: 14px;	
+        line-height: 17px;
+        margin-top: 15px;
+    }
+    &-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-rigth-block {
+        width: 60px;
+        height: 35px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-footer {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        .card-def {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+            color: $gray-01;
+            &.active {
+                color: $color_blue_1;
+            }
+        }
+        a {
+            text-decoration: underline;
+            color: #027590;
+            font-size: 15px;
+            line-height: 18px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.static-user-name .dropdown {
+  height: 100%; }
+  .static-user-name .dropdown.open .dropdown-toggle {
+    box-shadow: none;
+    background-color: transparent;
+    color: #ffffff; }
+    .static-user-name .dropdown.open .dropdown-toggle.btn-default:hover, .static-user-name .dropdown.open .dropdown-toggle.btn-default:active, .static-user-name .dropdown.open .dropdown-toggle.btn-default:focus {
+      background-color: transparent;
+      color: #ffffff; }
+  .static-user-name .dropdown.open .dropdown-menu {
+    border: none;
+    min-width: 221px;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    background-color: white;
+    left: unset;
+    right: 30px;
+    top: calc(100% + 38px); }
+    .static-user-name .dropdown.open .dropdown-menu li {
+      border-bottom: 1px solid #C6C6C6; }
+      .static-user-name .dropdown.open .dropdown-menu li.triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 14px 10px;
+        border-color: transparent transparent #ffffff transparent;
+        top: -14px;
+        right: 45px;
+        cursor: default; }
+      .static-user-name .dropdown.open .dropdown-menu li a {
+        outline: none;
+        padding: 20px;
+        display: flex;
+        align-items: center; }
+        .static-user-name .dropdown.open .dropdown-menu li a div {
+          width: 20px; }
+        .static-user-name .dropdown.open .dropdown-menu li a img {
+          filter: grayscale(1); }
+        .static-user-name .dropdown.open .dropdown-menu li a span {
+          font-family: "Roboto", sans-serif;
+          font-size: 15px;
+          color: #272727;
+          margin-left: 10px; }
+        .static-user-name .dropdown.open .dropdown-menu li a:hover {
+          background-color: rgba(64, 144, 185, 0.15); }
+        .static-user-name .dropdown.open .dropdown-menu li a:focus {
+          background-color: transparent; }
+      .static-user-name .dropdown.open .dropdown-menu li.my-dashboards a {
+        padding: 20px 10px;
+        cursor: default;
+        font-weight: bold; }
+        .static-user-name .dropdown.open .dropdown-menu li.my-dashboards a:hover {
+          background-color: transparent; }
+  .static-user-name .dropdown .dropdown-button {
+    height: 100%;
+    padding-right: 30px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff; }
+    .static-user-name .dropdown .dropdown-button:active {
+      background-color: transparent;
+      color: #ffffff; }
+    .static-user-name .dropdown .dropdown-button .caret {
+      border-width: 5px;
+      margin-left: 15px; }
+    .static-user-name .dropdown .dropdown-button:active {
+      box-shadow: none; }
+
+.static-user-name .divider {
+  background-color: #008FB7 !important; }

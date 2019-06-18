@@ -1,0 +1,44 @@
+.modal-multi-files {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 566px; }
+
+.modal-multi-add-photo {
+  height: 126px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px dashed #008FB7;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: #008FB7;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer; }
+  .modal-multi-add-photo img {
+    margin-bottom: 30px; }
+
+.modal-multi {
+  padding: 30px; }
+  .modal-multi .modal-multi-btns {
+    justify-content: flex-end; }
+
+.preview {
+  height: 267px;
+  width: 570px; }
+  .preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.dropzone {
+  display: flex;
+  flex-direction: column; }

@@ -1,0 +1,31 @@
+.routes .routes-header {
+  font-size: 20px;
+  font-weight: 900;
+  color: #272727;
+  line-height: 19px;
+  font-family: 'Roboto';
+  margin: 20px 0; }
+
+.routes .routes-label {
+  text-transform: uppercase;
+  color: #8E8E8E;
+  font-family: 'Roboto';
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  margin-bottom: 5px;
+  margin-left: 10px; }
+
+.route-point-add {
+  height: 50px;
+  border: 1px solid #003E50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #003E50;
+  font-size: 50px;
+  cursor: pointer;
+  margin-bottom: 20px; }
+
+.last-sortable-element .route-stop-point .point-measure {
+  visibility: hidden; }

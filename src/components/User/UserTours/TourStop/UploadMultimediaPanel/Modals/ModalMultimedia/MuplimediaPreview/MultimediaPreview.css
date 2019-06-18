@@ -1,0 +1,28 @@
+.preview-multimedia {
+  margin-top: 60px; }
+  .preview-multimedia-header {
+    display: flex;
+    justify-content: space-between; }
+  .preview-multimedia-name {
+    color: #272727;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 18px; }
+  .preview-multimedia-complete {
+    color: #C6C51E;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    margin-right: 35px; }
+  .preview-multimedia-player {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; }
+  .preview-multimedia-cancel {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    cursor: pointer; }
+    .preview-multimedia-cancel img {
+      height: 100%; }

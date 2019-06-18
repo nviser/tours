@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #f5f5f5; }
+
+/* common styles */
+.warn-color {
+  color: #C93C00 !important; }
+
+.color-main {
+  color: #003E50 !important; }
+
+.regular-header {
+  color: #272727;
+  font-size: 20px;
+  letter-spacing: 0.64px;
+  font-family: "Roboto", sans-serif; }
+
+.regular-label {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.11px;
+  font-family: "Roboto", sans-serif;
+  line-height: 14px; }
+
+/* common styles for static pages */
+.static-pages {
+  height: calc(100vh - 83px); }
+  .static-pages .static-pages-wrap {
+    position: relative;
+    min-height: calc(100% - 53px);
+    padding-top: 80px;
+    max-width: 1280px;
+    margin: 0 auto; }
+    .static-pages .static-pages-wrap .static-pages-header {
+      color: #2d2d2d;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px; }
+    .static-pages .static-pages-wrap .static-pages-body {
+      line-height: 29px;
+      font-size: 16px;
+      padding: 0 20px;
+      text-align: justify; }
+      .static-pages .static-pages-wrap .static-pages-body .static-pages-sub-header {
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-align: center; }
+      .static-pages .static-pages-wrap .static-pages-body .static-pages-empty {
+        height: 60px;
+        margin-top: 20px; }
+  .static-pages .static-footer {
+    position: relative;
+    flex: 0 0 auto; }
+
+/* autosuggest styles */
+.sug-above .react-autosuggest__suggestions-container--open {
+  bottom: 30px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(15, 15, 15, 0.39); }
+
+.react-autosuggest__suggestions-container--open {
+  line-height: 1.42;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(15, 15, 15, 0.39);
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: left;
+  max-height: 310px;
+  overflow-y: auto;
+  width: 100%; }
+  .react-autosuggest__suggestions-container--open .react-autosuggest__section-title {
+    padding: 10px 20px;
+    color: #272727;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    background: #f5f5f5; }
+  .react-autosuggest__suggestions-container--open .react-autosuggest__suggestion {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0;
+    color: #626262;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Roboto", sans-serif; }
+  .react-autosuggest__suggestions-container--open .react-autosuggest__suggestion--highlighted {
+    background-color: rgba(64, 144, 185, 0.15); }
+
+/* buttons */
+.button-main {
+  background: #003E50;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px; }
+  .button-main:disabled {
+    background: #c6c6c6 !important; }
+  .button-main:hover:disabled {
+    background: #c6c6c6 !important;
+    cursor: not-allowed; }
+  .button-main:hover {
+    background: #027590;
+    color: #ffffff; }
+
+.logged-wrap .align-grid {
+  display: flex; }
+
+.logged-wrap .logged-right-panel .info-panel {
+  height: 100%; }
+
+/* date range picker */
+.DateRangePicker__CalendarSelection {
+  background-color: #003E50;
+  border: #003E50; }
+
+/* Custom scrollbar */
+.scrollbar, .react-autosuggest__suggestions-container--open {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .scrollbar::-webkit-scrollbar, .react-autosuggest__suggestions-container--open::-webkit-scrollbar {
+    width: 5px; }
+  .scrollbar::-webkit-scrollbar-track, .react-autosuggest__suggestions-container--open::-webkit-scrollbar-track {
+    background: #f2f2f2; }
+  .scrollbar::-webkit-scrollbar-thumb, .react-autosuggest__suggestions-container--open::-webkit-scrollbar-thumb {
+    background-color: #c5c5c5;
+    border-radius: 10px; }
+  .scrollbar::-webkit-scrollbar-thumb:hover, .react-autosuggest__suggestions-container--open::-webkit-scrollbar-thumb:hover {
+    background: #888; }
+
+#root {
+  background: #f5f5f5;
+  min-height: 100%; }
+
+.no-margin {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+.pagination li a {
+  border: none;
+  background: transparent;
+  color: #8e8e8e;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  min-width: 4px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  line-height: 18px; }
+  .pagination li a:hover {
+    background: transparent;
+    color: #8e8e8e; }
+  .pagination li a a:focus {
+    background-color: transparent; }
+  .pagination li a img {
+    width: 13px;
+    margin-top: 3px;
+    height: 12px; }
+    .pagination li a img.right {
+      transform: rotate(180deg); }
+
+.pagination li:disabled:hover {
+  background: transparent; }
+
+.pagination li:disabled a:hover {
+  background-color: transparent; }
+
+.pagination li.active a, .pagination li.active a:focus, .pagination li.active a:active, .pagination li.active a:hover {
+  background-color: #45A1E4; }
+
+.pagination li.disabled a:focus {
+  background-color: transparent; }
+
+.pagination > .disabled > a, .pagination > .disabled > a:hover {
+  background: transparent; }
+
+.create-payment-method {
+  min-height: 100%; }
+  .create-payment-method-back {
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .create-payment-method-back img {
+      width: 20px;
+      height: 20px; }
+  @media (max-width: 1280px) {
+    .create-payment-method .right-col {
+      padding-left: 0; } }
+  .create-payment-method .create-payment-goBack {
+    color: #008fb7;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.48px;
+    line-height: 19px;
+    margin-left: 10px; }
+  .create-payment-method .add-methods-details {
+    color: #272727;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.64px;
+    line-height: 19px;
+    margin-bottom: 40px; }
+  .create-payment-method .create-payment-form {
+    margin-top: 30px;
+    min-height: 490px;
+    max-width: 969px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px; }
+    .create-payment-method .create-payment-form .form-block {
+      margin-bottom: 30px; }
+    .create-payment-method .create-payment-form .alert {
+      width: 444px; }
+    .create-payment-method .create-payment-form .edit-card-number {
+      max-width: 444px;
+      width: 100%;
+      position: relative; }
+      .create-payment-method .create-payment-form .edit-card-number .card-img {
+        width: 48px;
+        height: 29px;
+        position: absolute;
+        right: 5px;
+        top: 20px; }
+      .create-payment-method .create-payment-form .edit-card-number.read-only .regular-label {
+        color: #8e8e8e;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.13px;
+        line-height: 16px;
+        position: relative;
+        top: 20px; }
+    .create-payment-method .create-payment-form .form-control-group {
+      max-width: 444px;
+      margin-bottom: 0; }
+      .create-payment-method .create-payment-form .form-control-group.form-block {
+        margin-bottom: 30px; }
+      .create-payment-method .create-payment-form .form-control-group #cardNumber:disabled, .create-payment-method .create-payment-form .form-control-group #month:disabled, .create-payment-method .create-payment-form .form-control-group #year:disabled, .create-payment-method .create-payment-form .form-control-group #cvv:disabled {
+        background: #ffffff; }
+      .create-payment-method .create-payment-form .form-control-group.update-method .auth-label {
+        position: relative;
+        bottom: -20px; }
+        .create-payment-method .create-payment-form .form-control-group.update-method .auth-label .modal-sign-in-label {
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 0.13px;
+          line-height: 16px;
+          font-family: "Roboto", sans-serif; }
+      .create-payment-method .create-payment-form .form-control-group.update-method .create-payment-input {
+        border: none;
+        border-bottom: 1px solid #E3E3E3; }
+        .create-payment-method .create-payment-form .form-control-group.update-method .create-payment-input:disabled {
+          background: #ffffff; }
+      .create-payment-method .create-payment-form .form-control-group.update-method ~ .card-img {
+        top: 15px; }
+      .create-payment-method .create-payment-form .form-control-group .modal-sign-in-label {
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0.11px;
+        line-height: 14px; }
+    .create-payment-method .create-payment-form input {
+      outline: none;
+      border: 1px solid #E3E3E3;
+      border-radius: 2px;
+      padding: 0 10px;
+      height: 41px;
+      width: 100%;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      color: #272727;
+      font-size: 16px;
+      line-height: 19px; }
+      .create-payment-method .create-payment-form input::placeholder {
+        color: #d6d6d6; }
+    .create-payment-method .create-payment-form .button-block {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 90px; }
+      .create-payment-method .create-payment-form .button-block.right {
+        justify-content: flex-end; }
+      .create-payment-method .create-payment-form .button-block .button-main {
+        height: 49px;
+        width: 131px;
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: #008db3;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif; }
+      .create-payment-method .create-payment-form .button-block .del-card {
+        width: 131px;
+        height: 49px;
+        color: #008FB7;
+        outline: none;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        border: none;
+        background: transparent;
+        border-radius: 0;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+        text-transform: capitalize;
+        font-size: 15px; }
+        .create-payment-method .create-payment-form .button-block .del-card:hover {
+          color: #008FB7;
+          background: transparent; }
+        .create-payment-method .create-payment-form .button-block .del-card:hover {
+          text-decoration: underline; }
+      .create-payment-method .create-payment-form .button-block .save-card {
+        width: 131px;
+        height: 49px;
+        color: #fff;
+        outline: none;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        border: none;
+        background: #7BC372;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .create-payment-method .create-payment-form .button-block .save-card:hover {
+          color: #fff;
+          background: #6AA962; }
+        .create-payment-method .create-payment-form .button-block .save-card:disabled {
+          background: #CECECE;
+          cursor: not-allowed; }
+    .create-payment-method .create-payment-form .button-block.right {
+      justify-content: flex-end;
+      margin-top: 0; }
+    .create-payment-method .create-payment-form .default-toggler {
+      margin-bottom: 20px;
+      width: 444px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .create-payment-method .create-payment-form .default-toggler .toggle-text {
+        font-size: 13px;
+        line-height: 15px;
+        color: #007fa2;
+        text-transform: uppercase;
+        margin-bottom: 2px; }
+      .create-payment-method .create-payment-form .default-toggler .react-toggle {
+        margin-right: 5px;
+        transform: scale(0.75); }
+        .create-payment-method .create-payment-form .default-toggler .react-toggle .react-toggle-track {
+          background: none;
+          border: 2px solid #8e8e8e; }
+        .create-payment-method .create-payment-form .default-toggler .react-toggle:hover .react-toggle-track {
+          background: none; }
+        .create-payment-method .create-payment-form .default-toggler .react-toggle.react-toggle--checked .react-toggle-track {
+          background: #007fa2;
+          border: 1px solid #007fa2; }
+        .create-payment-method .create-payment-form .default-toggler .react-toggle.react-toggle--checked .react-toggle-thumb {
+          border: 1px solid #007fa2;
+          box-shadow: none;
+          right: 1px; }
+        .create-payment-method .create-payment-form .default-toggler .react-toggle.react-toggle--checked.react-toggle--focus {
+          box-shadow: none; }
+          .create-payment-method .create-payment-form .default-toggler .react-toggle.react-toggle--checked.react-toggle--focus .react-toggle-thumb {
+            border: 1px solid #007fa2;
+            right: 1px; }
+        .create-payment-method .create-payment-form .default-toggler .react-toggle.react-toggle--focus {
+          box-shadow: none; }
+          .create-payment-method .create-payment-form .default-toggler .react-toggle.react-toggle--focus .react-toggle-thumb {
+            border: 2px solid #8e8e8e;
+            box-shadow: none; }
+        .create-payment-method .create-payment-form .default-toggler .react-toggle .react-toggle-thumb {
+          border: 2px solid #8e8e8e; }
+  .create-payment-method .create-payment-method-card-date {
+    display: flex;
+    max-width: 444px; }
+    .create-payment-method .create-payment-method-card-date input {
+      max-width: 128px; }
+    .create-payment-method .create-payment-method-card-date .form-control-group {
+      margin-right: 30px; }
+      .create-payment-method .create-payment-method-card-date .form-control-group:last-child {
+        margin-right: 0; }
+  .create-payment-method .tour-toggle-block, .create-payment-method .tour-preview-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid #c6c6c6;
+    width: 180px;
+    margin: 15px 0; }
+    .create-payment-method .tour-toggle-block .tg-status, .create-payment-method .tour-toggle-block a, .create-payment-method .tour-preview-block .tg-status, .create-payment-method .tour-preview-block a {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 18px;
+      color: #007fa2;
+      text-transform: uppercase; }
+  .create-payment-method .tour-toggle-block {
+    flex-direction: column; }
+    .create-payment-method .tour-toggle-block .toggler {
+      cursor: pointer;
+      width: 40px;
+      height: 20px;
+      border-radius: 10px;
+      position: relative;
+      background: #007fa2; }
+      .create-payment-method .tour-toggle-block .toggler .grip {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #ffffff; }
+      .create-payment-method .tour-toggle-block .toggler.inactive {
+        background: #ffffff; }
+    .create-payment-method .tour-toggle-block .tg-status {
+      margin-top: 10px; }
+  .create-payment-method .create-payment-method-back .go-back-btn {
+    color: #008FB7;
+    background: transparent;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    height: 38px;
+    font-size: 15px;
+    letter-spacing: 0.48px;
+    line-height: 19px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 18px; }
+    .create-payment-method .create-payment-method-back .go-back-btn:hover {
+      text-decoration: underline; }
+    .create-payment-method .create-payment-method-back .go-back-btn img {
+      margin-right: 10px; }
+    .create-payment-method .create-payment-method-back .go-back-btn img {
+      width: 13px;
+      height: 13px; }
+  .create-payment-method .modal-sign-in-warn-message {
+    font-size: 14px;
+    color: #F15B59 !important;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%; }
+
+@media (max-width: 991px) {
+  .create-payment-method-back {
+    padding-left: 15px;
+    padding-top: 15px; }
+  .create-payment-form {
+    margin-left: 15px;
+    margin-bottom: 15px; } }
+
+@media (max-width: 768px) {
+  .static-header-form {
+    display: none; }
+  .payment-methods-container .show-grid .right-col .create-payment-form .edit-card-number, .payment-methods-container .show-grid .right-col .create-payment-form .create-payment-method-card-date {
+    width: 444px; } }
+
+@media (max-width: 540px) {
+  .create-payment-form .form-control-group {
+    width: 100%; }
+  .create-payment-method-card-date {
+    width: 100%; }
+    .create-payment-method-card-date .form-control-group {
+      margin-right: 20px; }
+  .create-payment-form .default-toggler,
+  .create-payment-form .button-block {
+    width: 100%; } }
+
+@media (max-width: 500px) {
+  .payment-methods-container .show-grid .right-col .create-payment-form .edit-card-number, .payment-methods-container .show-grid .right-col .create-payment-form .create-payment-method-card-date {
+    width: 100%; } }
+
+@media (max-width: 430px) {
+  .create-payment-form .form-control-group.update-method .auth-label {
+    font-size: 10px; } }

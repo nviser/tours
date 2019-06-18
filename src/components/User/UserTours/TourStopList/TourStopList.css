@@ -1,0 +1,89 @@
+.stop-list-page {
+  height: 100%;
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff; }
+  .stop-list-page .stop-list-wrap {
+    min-height: 100%; }
+    .stop-list-page .stop-list-wrap .left-block {
+      display: flex;
+      flex-direction: column;
+      padding: 0; }
+  .stop-list-page .stop-list-main-block {
+    width: 100%; }
+    @media (max-width: 992px) {
+      .stop-list-page .stop-list-main-block {
+        align-self: center;
+        width: 100%; } }
+    .stop-list-page .stop-list-main-block .stop-item-list {
+      margin: 40px 0; }
+    .stop-list-page .stop-list-main-block .stop-point-add {
+      margin-top: 35px;
+      padding: 20px;
+      border: 1px solid #45A1E4;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #45A1E4;
+      cursor: pointer;
+      margin-bottom: 20px; }
+      .stop-list-page .stop-list-main-block .stop-point-add .add-text {
+        color: #45A1E4;
+        font-size: 16px;
+        text-transform: uppercase; }
+      .stop-list-page .stop-list-main-block .stop-point-add i {
+        color: #45A1E4;
+        font-size: 1.4em; }
+  .stop-list-page .stop-list-container {
+    width: 100%;
+    margin: 0 auto; }
+  .stop-list-page .static-footer {
+    margin-top: -56px;
+    position: relative; }
+  .stop-list-page .stop-title {
+    margin-top: 50px; }
+  .stop-list-page .left-panel {
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 3px 0px 6px -3px rgba(0, 0, 0, 0.24);
+    padding-bottom: 55px;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .stop-list-page .left-panel::-webkit-scrollbar {
+      width: 5px; }
+    .stop-list-page .left-panel::-webkit-scrollbar-track {
+      background: #f1f1f1; }
+    .stop-list-page .left-panel::-webkit-scrollbar-thumb {
+      background-color: #c6c6c6;
+      border-radius: 10px; }
+    .stop-list-page .left-panel::-webkit-scrollbar-thumb:hover {
+      background: #888; }
+    @media (max-width: 1200px) {
+      .stop-list-page .left-panel {
+        box-shadow: none; } }
+  .stop-list-page .rigth-panel {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (max-width: 768px) {
+      .stop-list-page .rigth-panel {
+        display: none; } }
+
+@media screen and (max-width: 768px) {
+  .stop-list-page .stop-list-container .left-block .left-panel {
+    padding: 15px; }
+  .stop-list-page .stop-list-container .stop-bottom {
+    padding: 15px;
+    justify-content: space-between; }
+    .stop-list-page .stop-list-container .stop-bottom .info-string {
+      display: none; } }

@@ -1,0 +1,180 @@
+.tour-item-container {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+  border-radius: 5px; }
+
+.tour-item {
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 30px; }
+  .tour-item .tour-img-block .tour-img-container {
+    width: 170px;
+    height: 110px; }
+  .tour-item .tour-img-block .tour-img {
+    margin-bottom: -3px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .tour-item .tour-img-block .tour-cost {
+    height: 41px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #007fa2;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.47px;
+    line-height: 20px;
+    color: #ffffff; }
+  .tour-item .tour-main-block {
+    padding: 8px 20px;
+    width: 100%; }
+    @media (max-width: 600px) {
+      .tour-item .tour-main-block {
+        overflow-x: auto; } }
+    .tour-item .tour-main-block .tour-location {
+      cursor: pointer;
+      color: #8e8e8e;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17px;
+      text-transform: uppercase;
+      display: flex; }
+      .tour-item .tour-main-block .tour-location .map-marker {
+        margin-right: 5px; }
+      .tour-item .tour-main-block .tour-location .green {
+        color: #2C855A; }
+      .tour-item .tour-main-block .tour-location .middot {
+        font-size: 20px; }
+    .tour-item .tour-main-block .tour-header {
+      color: #272727;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 17px;
+      max-width: 460px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 15px 0;
+      cursor: pointer; }
+    .tour-item .tour-main-block .tour-rating {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 15px; }
+      .tour-item .tour-main-block .tour-rating .stars {
+        margin-right: 20px; }
+        .tour-item .tour-main-block .tour-rating .stars img {
+          width: 73px; }
+      .tour-item .tour-main-block .tour-rating .reviews {
+        color: #8e8e8e;
+        font-size: 12px;
+        line-height: 20px; }
+    .tour-item .tour-main-block .tour-info {
+      display: flex; }
+      .tour-item .tour-main-block .tour-info .info-item {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #8e8e8e;
+        margin-right: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column; }
+        .tour-item .tour-main-block .tour-info .info-item .item-top {
+          text-transform: uppercase;
+          white-space: nowrap; }
+        .tour-item .tour-main-block .tour-info .info-item .item-bottom {
+          color: #007fa2;
+          font-weight: 500;
+          font-size: 10px;
+          white-space: nowrap;
+          display: flex;
+          align-items: center; }
+          .tour-item .tour-main-block .tour-info .info-item .item-bottom .icon-mobility {
+            margin-right: 5px;
+            width: 12px;
+            margin-bottom: 2px; }
+          .tour-item .tour-main-block .tour-info .info-item .item-bottom.ages {
+            text-transform: uppercase; }
+    .tour-item .tour-main-block .tour-people {
+      text-transform: uppercase;
+      color: #8e8e8e;
+      margin-top: 15px;
+      font-size: 12px; }
+  .tour-item .tour-toggle-block, .tour-item .tour-preview-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid #c6c6c6;
+    width: 180px;
+    margin: 15px 0; }
+    .tour-item .tour-toggle-block .tg-status, .tour-item .tour-toggle-block a, .tour-item .tour-preview-block .tg-status, .tour-item .tour-preview-block a {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 18px;
+      color: #007fa2;
+      text-transform: uppercase; }
+  .tour-item .tour-toggle-block {
+    flex-direction: column; }
+    @media (max-width: 1200px) {
+      .tour-item .tour-toggle-block {
+        display: none; } }
+    .tour-item .tour-toggle-block .toggler {
+      cursor: pointer;
+      width: 40px;
+      height: 20px;
+      border-radius: 10px;
+      position: relative;
+      background: #007fa2; }
+      .tour-item .tour-toggle-block .toggler .grip {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #ffffff; }
+      .tour-item .tour-toggle-block .toggler.inactive {
+        background: #ffffff; }
+    .tour-item .tour-toggle-block .tg-status {
+      margin-top: 10px; }
+    .tour-item .tour-toggle-block .react-toggle .react-toggle-track {
+      background: none;
+      border: 2px solid #8e8e8e; }
+    .tour-item .tour-toggle-block .react-toggle:hover .react-toggle-track {
+      background: none; }
+    .tour-item .tour-toggle-block .react-toggle.react-toggle--checked .react-toggle-track {
+      background: #007fa2;
+      border: 1px solid #007fa2; }
+    .tour-item .tour-toggle-block .react-toggle.react-toggle--checked .react-toggle-thumb {
+      border: 1px solid #007fa2;
+      box-shadow: none;
+      right: 1px; }
+    .tour-item .tour-toggle-block .react-toggle.react-toggle--checked.react-toggle--focus {
+      box-shadow: none; }
+      .tour-item .tour-toggle-block .react-toggle.react-toggle--checked.react-toggle--focus .react-toggle-thumb {
+        border: 1px solid #007fa2;
+        right: 1px; }
+    .tour-item .tour-toggle-block .react-toggle.react-toggle--focus {
+      box-shadow: none; }
+      .tour-item .tour-toggle-block .react-toggle.react-toggle--focus .react-toggle-thumb {
+        border: 2px solid #8e8e8e;
+        box-shadow: none; }
+    .tour-item .tour-toggle-block .react-toggle .react-toggle-thumb {
+      border: 2px solid #8e8e8e; }
+  @media (max-width: 1200px) {
+    .tour-item .tour-preview-block {
+      display: none; } }
+  .tour-item .tour-preview-block span {
+    cursor: pointer;
+    color: #007fa2;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px; }

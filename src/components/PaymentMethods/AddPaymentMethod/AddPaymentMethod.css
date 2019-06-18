@@ -1,0 +1,40 @@
+.add-payment-method {
+  height: 136px;
+  width: 270px;
+  border: 1px solid #8CD2E8;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer; }
+
+.add-payment-title {
+  color: #8CD2E8;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-top: 20px;
+  text-transform: uppercase; }
+
+.icon-three-dots {
+  display: block;
+  border-radius: 100%;
+  background-color: #8CD2E8;
+  position: relative;
+  width: 6px;
+  height: 6px; }
+  .icon-three-dots:before, .icon-three-dots:after {
+    display: block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #8CD2E8;
+    position: absolute;
+    border-radius: 100%; }
+  .icon-three-dots:before {
+    left: -12px; }
+  .icon-three-dots:after {
+    right: -12px; }

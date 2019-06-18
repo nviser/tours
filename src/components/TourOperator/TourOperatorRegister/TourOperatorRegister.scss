@@ -1,0 +1,356 @@
+@import "../../../assets/scss/variables.scss";
+
+.tour-operator {
+
+  &-container {
+    margin: 0 auto;
+    width: 100%;
+    color: $color_main;
+    font-weight: bold;
+  }
+  &-header {
+    margin: 0 auto;
+    max-width: 540px;
+    padding: 30px;
+  }
+  &-title {
+    margin: 30px 0 25px 0;
+    font-family: $font_roboto;
+    text-align: center;
+    font-size: 28px;
+    color: $color_main_header;
+  }
+  &-btn {
+    cursor: pointer;
+    &--container {
+      margin-top: 10px;
+      display: flex;
+
+      margin-bottom: 30px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &--register {
+      height: 50px;
+      background: #008FB7!important;
+      width: 130px;
+      &:hover {
+        background: #027590!important;
+      }
+    }
+    &--back {
+      display: flex;
+      // flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      span {
+        color: #008fb7;
+        font-family: Roboto;
+      }
+      img {
+        height: 15px;
+        width: 15px;
+      }
+    }
+  }
+
+  &-desctiption {
+    font-family: $font_roboto;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: normal;
+    color: $color_main_header;
+  }
+
+}
+.input-wrapper {
+  margin-top: 30px;
+}
+.autosuggest {
+  margin-bottom: 30px;
+  input {
+    border: none;
+    border-bottom: 2px solid #c6c6c6;
+    color: #757575;
+    padding: 10px 20px;
+    outline: none;
+    height: auto;
+    width: 100%;
+    font-family: $font_roboto;
+    font-size: 14px;
+    transition: all 0.3s;
+    //&:focus {
+    //  border-bottom: 2px solid #003e50;
+    //}
+  }
+}
+.form-control-group {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  .auth-label {
+    color: $gray-01;
+    font-family: $font_roboto;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.11px;
+    line-height: 16px;
+  }
+  .form-control-input {
+    border: none;
+    border-bottom: 2px solid #c6c6c6;
+    padding: 10px;
+    outline: none;
+    height: auto;
+    min-width: 263px;
+    //
+    font-family: $font_roboto;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s;
+    &:focus {
+      border-bottom: 2px solid #003e50;
+    }
+  }
+  //.input-errors {
+  //  font-size: 12px;
+  //  margin-bottom: 15px;
+  //  padding-left: 10px;
+  //  font-style: italic;
+  //  font-weight: 700;
+  //  position: absolute;
+  //  top: -20px;
+  //  right: 0;
+  //}
+  .react-date-picker,.react-date-picker__wrapper  {
+    width: 100%;
+    background: #fff;
+  }
+  .react-date-picker__wrapper {
+    border: none;
+  }
+  .react-date-picker__inputGroup__input, .react-date-picker__calendar-button{
+    &:focus {
+      outline: none;
+    }
+  }
+  .react-date-picker__inputGroup {
+    color: $color_text;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+}
+#about_me {
+  resize: none;
+}
+
+.go-back-title {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.required-fields {
+  color: #8e8e8e;
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: right;
+  padding: 20px 0;
+  font-weight: normal;
+}
+.additional-terms {
+  font-size: 11px;
+  color: $gray-01;
+  a {
+    color: $color_blue_1;
+  }
+}
+.terms_and_conditions {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0.35px;
+  line-height: 18px;
+  color: $gray-01;
+  input {
+    margin-top: 0;
+  }
+  .go-link {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #8e8e8e;
+  }
+}
+.not-agree {
+  color: #F15B59!important;
+}
+.company-checkbox {
+  display: flex;
+  align-items: center;
+  label {
+    color: #8E8E8E;
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+  }
+}
+.sign-up-input {
+  border: none;
+  border-bottom: 2px solid #c6c6c6;
+  color: #003e50;
+  padding: 10px 20px;
+  outline: none;
+  height: auto;
+  min-width: 263px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.auth-label {
+  color: #8e8e8e;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0.13px;
+  line-height: 16px;
+  text-align: left;
+  align-self: flex-start;
+}
+.company-label,.agree {
+  cursor: pointer;
+}
+
+
+
+.tour-operator-register{
+  padding-top: 60px;
+  min-height: 100vh;
+  background: linear-gradient(45.18deg, #4090B9 0%, #8CD2E8 100%);
+  .header,
+  .description{
+    text-align: center;
+    color: #272727;
+    font-family: "Roboto", sans-serif;
+  }
+  .header{
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .description{
+    margin-bottom: 35px;
+    font-size: 14px;
+  }
+
+  &.success{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .tour-operator-register-success-block{
+      background-color: #fff;
+      width: 620px;
+      padding: 35px 94px;
+      margin: 0 auto;
+    }
+  }
+
+  .tour-operator-register-form{
+    background-color: #fff;
+    width: 620px;
+    padding: 35px 94px;
+    margin: 0 auto;
+    .form-control-group{
+      position: relative;
+      margin-bottom: 20px;
+      .form-input,
+      .date-picker,
+      .react-autosuggest__input{
+        //outline: none;
+        border: 1px solid #E3E3E3;
+        border-radius: 2px;
+        padding: 12px 6px;
+        width: 100%;
+        font-size: 14px;
+      }
+      .date-picker {
+        padding: 5px;
+        &.has-errors {
+          border: 1px solid #F15B59 !important;
+          background-color: rgba(241, 91, 89, 0.12);
+          .react-date-picker__wrapper {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .company-checkbox{
+      display: flex;
+      align-items: center;
+      .company-label{
+        color: #8E8E8E;
+        font-family: "Roboto", sans-serif;
+        font-size: 11px;
+      }
+    }
+  }
+  .tour-operator-register-footer{
+    width: 100%;
+    height: auto;
+    margin: 60px 0 30px 0;
+  }
+  .terms_and_conditions{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 11px;
+    .go-link{
+      color: #008FB7;
+      font-weight: bold;
+      font-size: inherit;
+    }
+  }
+  .tour-operator-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .btn-next{
+      background-color: #7BC372;
+      padding: 18px 60px;
+      text-transform: uppercase;
+      &:hover{
+        background-color: #61c356;
+      }
+    }
+    .btn-cancel{
+      text-decoration: underline;
+      color: #008FB7;
+      font-family: "Roboto", sans-serif;
+      margin-right: 35px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .tour-operator-register{
+    .tour-operator-register-form{
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .tour-operator-register{
+    .tour-operator-register-form{
+      width: 85%;
+      padding: 20px 15px;
+    }
+  }
+}

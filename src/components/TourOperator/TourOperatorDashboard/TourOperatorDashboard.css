@@ -1,0 +1,67 @@
+.show-grid--margin-top {
+  margin-top: 30px; }
+
+.creator-header {
+  margin-top: 10px; }
+
+.tour-operator-content {
+  padding: 20px 25px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11); }
+  .tour-operator-content.statistic {
+    padding: 6px 15px; }
+  .tour-operator-content--profile {
+    padding: 20px 25px;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+    min-height: 115px;
+    background: linear-gradient(17.62deg, #D0B2E0 0%, #964CBE 100%);
+    display: flex; }
+    .tour-operator-content--profile img {
+      height: 125px;
+      width: 125px;
+      border-radius: 50%;
+      object-fit: cover; }
+    .tour-operator-content--profile h3 {
+      font-size: 18px; }
+    .tour-operator-content--profile h4 {
+      margin-top: 15px; }
+    .tour-operator-content--profile p {
+      margin-top: 15px;
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 16px; }
+    .tour-operator-content--profile-rigth {
+      margin-left: 25px;
+      width: 100%; }
+    .tour-operator-content--profile-up {
+      display: flex;
+      justify-content: space-between; }
+    .tour-operator-content--profile-btn {
+      height: 40px;
+      width: 100px;
+      border-radius: 3px;
+      background-color: #003E50;
+      color: #FFFFFF;
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
+  .tour-operator-content-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 30px 10px; }
+    .tour-operator-content-title a {
+      text-decoration: underline;
+      color: #45A1E4;
+      font-size: 15px;
+      letter-spacing: 0.48px;
+      line-height: 19px; }

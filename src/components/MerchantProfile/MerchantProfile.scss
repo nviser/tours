@@ -1,0 +1,175 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/common.scss";
+
+.merchant-profile {
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+  padding: 25px;
+  &-container {
+    //max-width: 970px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+    margin-top: 30px;
+    padding: 20px 25px 45px 25px;
+    .tour-operator-form {
+      margin-top: -65px;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+      width: 100%;
+      max-width: 742px;
+      input {
+        min-width: 350px;
+      }
+      @media(max-width:1230px) {
+        margin: 0 auto;
+      }
+    }
+  }
+  &-media-elements {
+    height: 220px;
+    position: relative;
+    margin-bottom: 150px;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .edit-img {
+      height: 56px;
+      width: 56px;
+      background-color: #d8d8d8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: -28px;
+      right: 0;
+      cursor: pointer;
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+    .merchant-profile-avatar {
+      width: 130px;
+      height: 130px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: -100px;
+      left: 70px;
+      &-image {
+        height: 117px;
+        width: 117px;
+
+        img {
+          border-radius: 50%;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .edit-img {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 60%;
+          height: 60%;
+          object-fit: cover;
+        }
+        bottom: 2px;
+        right: 2px;
+        border-radius: 50%;
+        background: #d8d8d8;
+      }
+      input {
+        display: none;
+      }
+      .edit-avatar {
+        height: 36px;
+        width: 36px;
+        background-color: #d8d8d8;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom:0;
+        right: 5px;
+        cursor: pointer;
+        img {
+          height: 22px;
+          width: 22px;
+        }
+      }
+    }
+  }
+
+  &-edit-form {
+    padding: 0 80px;
+    @media screen and (max-width: 768px){
+      padding: 0;
+    }
+    .form-group-has-error{
+      position: relative;
+      margin-bottom: 25px;
+      .form-control-input,
+      .react-autosuggest__input{
+        border: 1px solid #E3E3E3;
+        border-radius: 2px;
+        color: #272727;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 21px;
+        padding: 10px;
+        outline: none;
+        height: 41px;
+        width: 100%;
+        font-family: "Roboto", sans-serif;
+        position: relative;
+      }
+      .form-control-textarea{
+        outline: none;
+        box-shadow: none;
+        border-color: #E3E3E3;
+        border-radius: 2px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 21px;
+      }
+    }
+  }
+  &-updated {
+    color: green;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    margin-right: 10px;
+  }
+  .btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    .save-btn {
+      @include regularBtn(#fff, #fff, #7BC372, #6AA962, none, 3px, 161px, 49px);
+    }
+  }
+  .modal-multi-btns {
+    justify-content: flex-end;
+  }
+}
+
+#changeBackground {
+  display: none;
+}

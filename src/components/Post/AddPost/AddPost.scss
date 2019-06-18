@@ -1,0 +1,112 @@
+@import "../../../assets/scss/variables.scss";
+
+.add-post-component {
+  .panel-heading {
+    img {
+      width: 70px;
+    }
+  }
+  .user-story-textarea {
+    border: none;
+    box-shadow: none;
+    height: 40px;
+  }
+  .form-group-story {
+    margin-bottom: 0;
+  }
+  .page-header {
+    margin: 20px 0 10px;
+    border-bottom: none;
+  }
+  .panel-body {
+    .btn-toolbar {
+      margin-bottom: 10px;
+      .btn {
+        outline: none;
+        .glyphicon {
+          margin-right: 5px;
+        }
+      }
+    }
+    .form-control {
+      margin-bottom: 10px;
+    }
+  }
+  .show-grid {
+    display: flex;
+    align-items: center;
+    .btn-primary {
+      border: none;
+      background-color: $color_main;
+      font-weight: bold;
+    }
+  }
+  .btn-toolbar {
+    .btn-default {
+      border-radius: 30px;
+      font-size: 10px;
+    }
+  }
+  .picker-occured-date {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #adadad;
+    padding: 6px;
+    outline: none;
+  }
+  textarea {
+    resize: none;
+  }
+  .react-autosuggest__input {
+    width: 100%;
+    padding: 0 10px 0 25px;
+    &::placeholder {
+      color: #525252;
+    }
+  }
+  .location-selector {
+    position: relative;
+    .map-marker {
+      position: absolute;
+      z-index: 1;
+      transform: translateY(50%);
+      left: 5px;
+      top: 0;
+      color: #272727;
+    }
+  }
+  .Select {
+    font-size: 14px;
+    &.is-focused:not(.is-open) {
+      & > .Select-control {
+        border: none;
+        box-shadow: unset;
+      }
+    }
+    .Select-control {
+      height: 30px;
+      border: none;
+      &:focus {
+        box-shadow: unset;
+      }
+      .Select-input {
+        height: 30px;
+        & > input {
+          line-height: 15px;
+        }
+      }
+      .Select-placeholder {
+        line-height: 30px;
+      }
+    }
+    .Select-value {
+      line-height: 30px;
+    }
+    &.type-select.atop {
+      .Select-menu-outer {
+        top: unset;
+        bottom: 30px;
+      }
+    }
+  }
+}

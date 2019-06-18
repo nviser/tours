@@ -1,0 +1,10 @@
+.rating-group {
+    i {
+        color: #ffc06c;
+        margin-right: 4.5px;
+        font-size: 12px;
+        &.empty {
+            color: #e5e5e5;
+        }
+    }
+}

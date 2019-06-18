@@ -1,0 +1,231 @@
+@import "../../../../assets/scss/variables.scss";
+
+.tour-item-container {
+  box-shadow: $shadow;
+  border-radius: 5px;
+}
+.tour-item {
+  font-family: $font_roboto;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 30px;
+  .tour-img-block {
+    .tour-img-container {
+      width: 170px;
+      height: 110px;
+    }
+    .tour-img {
+      margin-bottom: -3px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .tour-cost {
+      height: 41px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $color_blue;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 0.47px;
+      line-height: 20px;
+      color: #ffffff;
+    }
+  }
+  .tour-main-block {
+    padding: 8px 20px;
+    width: 100%;
+    @media(max-width:600px) {
+      overflow-x: auto;
+    }
+   
+    .tour-location {
+      cursor: pointer;
+      color: $gray-01;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17px;
+      text-transform: uppercase;
+      display: flex;
+      .map-marker {
+        margin-right: 5px;
+      }
+      .green {
+        color: $color_green;
+      }
+      .middot {
+        font-size: 20px;
+      }
+    }
+    .tour-header {
+      color: $color_text;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 17px;
+      max-width: 460px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 15px 0;
+      cursor: pointer;
+    }
+    .tour-rating {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 15px;
+      .stars {
+        margin-right: 20px;
+        img {
+          width: 73px;
+        }
+      }
+      .reviews {
+        color: $gray-01;
+        font-size: 12px;	
+        line-height: 20px;
+      }
+    }
+    .tour-info {
+      display: flex;
+      .info-item {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: $gray-01;
+        margin-right: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .item-top {
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+        .item-bottom {
+          color: $color_blue;
+          font-weight: 500;
+          font-size: 10px;
+          white-space: nowrap;
+          display: flex;
+          align-items: center;
+          .icon-mobility {
+            margin-right: 5px;
+            width: 12px;
+            margin-bottom: 2px;
+          }
+          &.ages {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .tour-people {
+      text-transform: uppercase;
+      color: $gray-01;
+      margin-top: 15px;
+      font-size: 12px;
+    }
+  }
+  .tour-toggle-block, .tour-preview-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid $color_divider;
+    width: 180px;
+    margin: 15px 0;
+    .tg-status, a {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 18px;
+      color: $color_blue;
+      text-transform: uppercase;
+    }
+  }
+  .tour-toggle-block {
+    flex-direction: column;
+    @media(max-width: 1200px) {
+      display: none;
+    }
+    .toggler {
+      cursor: pointer;
+      width: 40px;
+      height: 20px;
+      border-radius: 10px;
+      position: relative;
+      background: $color_blue;
+      .grip {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #ffffff;
+      }
+      &.inactive {
+        background: #ffffff;
+      }
+    }
+    .tg-status {
+      margin-top: 10px;
+    }
+    .react-toggle {
+      .react-toggle-track {
+        background: none;
+        border: 2px solid $gray-01;
+      }
+      &:hover {
+        .react-toggle-track {
+          background: none;
+        }
+      }
+      &.react-toggle--checked {
+        .react-toggle-track {
+          background: $color_blue;
+          border: 1px solid $color_blue;
+        }
+        .react-toggle-thumb {
+          border: 1px solid $color_blue;
+          box-shadow: none;
+          right: 1px;
+        }
+        &.react-toggle--focus {
+          box-shadow: none;
+          .react-toggle-thumb {
+            border: 1px solid $color_blue;
+            right: 1px;
+          }
+          }
+      }
+      &.react-toggle--focus {
+        box-shadow: none;
+        .react-toggle-thumb {
+          border: 2px solid $gray-01;
+          box-shadow: none;
+        }
+      }
+      .react-toggle-thumb {
+        border: 2px solid $gray-01;
+      }
+    }
+  }
+  .tour-preview-block {
+    @media(max-width: 1200px) {
+      display: none;
+    }
+    span {
+      cursor: pointer;
+      color: $color_blue;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 18px;
+    }
+  }
+}

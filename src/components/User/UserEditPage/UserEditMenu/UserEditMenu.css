@@ -1,0 +1,12 @@
+.user-edit-menu {
+  font-weight: bold;
+  font-size: 13px;
+  padding: 30px; }
+  .user-edit-menu .edit-menu-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color .3s ease; }
+    .user-edit-menu .edit-menu-item .edit-menu-icon {
+      margin-right: 10px; }
+    .user-edit-menu .edit-menu-item.selected, .user-edit-menu .edit-menu-item:hover {
+      color: #003E50; }

@@ -1,0 +1,102 @@
+.stop-point-container {
+  display: flex;
+  background: #fff;
+  border-radius: 3px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 12px 0 rgba(98, 99, 100, 0.34);
+  width: 100%;
+  padding: 0; }
+  .stop-point-container .stop-left {
+    display: flex;
+    align-items: center;
+    width: 80%; }
+    @media screen and (max-width: 768px) {
+      .stop-point-container .stop-left {
+        width: 75%; } }
+  .stop-point-container .stop-img {
+    position: relative;
+    width: 116px;
+    min-width: 116px;
+    height: 116px;
+    align-self: center; }
+    .stop-point-container .stop-img .point-image {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      object-fit: cover; }
+    .stop-point-container .stop-img .point-marker {
+      position: absolute;
+      top: calc(50% - 28px);
+      left: calc(50% - 25px);
+      width: 50px; }
+    .stop-point-container .stop-img .point-number {
+      position: absolute;
+      top: calc(50% - 10px);
+      left: 0;
+      z-index: 2;
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 18px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: #003E50; }
+  .stop-point-container .stop-descr {
+    margin-left: 20px;
+    width: 65%; }
+    @media screen and (max-width: 768px) {
+      .stop-point-container .stop-descr {
+        width: 50%; } }
+    .stop-point-container .stop-descr .stop-item-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px; }
+      .stop-point-container .stop-descr .stop-item-header h4 {
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        margin-top: 3px;
+        color: #0D0D0D;
+        font-size: 18px;
+        line-height: 20px;
+        max-width: 480px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+    .stop-point-container .stop-descr .stop-info-text {
+      color: #8e8e8e;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px; }
+  .stop-point-container .stop-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #45A1E4;
+    font-size: 15px;
+    letter-spacing: 0.48px;
+    line-height: 19px;
+    align-self: stretch;
+    font-weight: normal;
+    width: 100px;
+    height: 116px;
+    min-width: 100px;
+    cursor: pointer; }
+    .stop-point-container .stop-number span {
+      color: #ffffff;
+      background-color: #9AD3E3;
+      border-radius: 25px;
+      padding: 0 7px;
+      font-weight: bold;
+      text-align: center;
+      margin-right: 5px;
+      font-size: 24px;
+      vertical-align: middle;
+      line-height: 28px;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }

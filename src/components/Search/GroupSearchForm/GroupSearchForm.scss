@@ -1,0 +1,80 @@
+@import "../../../assets/scss/variables.scss";
+
+.search-form {
+    position: relative;
+    height: 100%;
+    .magnifier, .times {
+        position: absolute;
+        top: 16px;
+        color: #8fc9da;
+        width: 20px;
+        height: 20px;
+        z-index: 999;
+        font-size: 13px;
+    }
+    .magnifier {
+        left: 10px;
+    }
+    .times {
+        right: 10px;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .5s ease, visibility .5s ease;
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity .5s ease;
+        }
+    }
+    .search-form-btn {
+        background-image: url("../../../assets/img/arrow.jpg");
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 3px;
+    }
+
+    .react-autosuggest__input {
+        height: 50px;
+        min-width: 400px;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+        border: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 15px 35px 15px 40px;
+        color: $color_text;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
+        outline: none;
+        margin: 0;
+        display: block;
+        @media(max-width:1100px) {
+            min-width: 15%;
+        }
+        &::placeholder {
+            font-family: Roboto;
+            font-size: 18px;
+            color: $color_text_regular;
+            font-weight: 300;
+            line-height: 21px;
+        }
+    }
+    .react-autosuggest__container {
+        position: relative;
+    }
+    .side-map {
+        display: none;
+    }
+}

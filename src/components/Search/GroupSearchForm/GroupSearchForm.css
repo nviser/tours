@@ -1,0 +1,67 @@
+.search-form {
+  position: relative;
+  height: 100%; }
+  .search-form .magnifier, .search-form .times {
+    position: absolute;
+    top: 16px;
+    color: #8fc9da;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+    font-size: 13px; }
+  .search-form .magnifier {
+    left: 10px; }
+  .search-form .times {
+    right: 10px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease, visibility .5s ease; }
+    .search-form .times.active {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity .5s ease; }
+  .search-form .search-form-btn {
+    background-image: url("../../../assets/img/arrow.jpg");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 3px; }
+  .search-form .react-autosuggest__input {
+    height: 50px;
+    min-width: 400px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px 35px 15px 40px;
+    color: #272727;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    outline: none;
+    margin: 0;
+    display: block; }
+    @media (max-width: 1100px) {
+      .search-form .react-autosuggest__input {
+        min-width: 15%; } }
+    .search-form .react-autosuggest__input::placeholder {
+      font-family: Roboto;
+      font-size: 18px;
+      color: #525252;
+      font-weight: 300;
+      line-height: 21px; }
+  .search-form .react-autosuggest__container {
+    position: relative; }
+  .search-form .side-map {
+    display: none; }

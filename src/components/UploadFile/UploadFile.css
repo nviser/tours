@@ -1,0 +1,33 @@
+.drop-zone .drop-zone-list {
+  display: flex;
+  flex-flow: wrap; }
+  .drop-zone .drop-zone-list .drop-zone-list-item {
+    max-height: 160px;
+    overflow: hidden;
+    width: 23.9%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; }
+    .drop-zone .drop-zone-list .drop-zone-list-item:nth-child(4n+1) {
+      margin-left: 0; }
+    .drop-zone .drop-zone-list .drop-zone-list-item .drop-img {
+      width: 100%; }
+  .drop-zone .drop-zone-list .upload-block {
+    width: 23.9%;
+    border: 2px dashed #333333; }
+    .drop-zone .drop-zone-list .upload-block .add-zone {
+      height: 160px;
+      background: #f2f2f2;
+      width: 100%;
+      text-align: center; }
+      .drop-zone .drop-zone-list .upload-block .add-zone .plus-file {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 3vw;
+        margin-bottom: 20px; }
+      .drop-zone .drop-zone-list .upload-block .add-zone.add-zone-accepted {
+        box-shadow: inset 0 0 20px #4fb051; }
+      .drop-zone .drop-zone-list .upload-block .add-zone.add-zone-rejected {
+        box-shadow: inset 0 0 20px #C93C00; }

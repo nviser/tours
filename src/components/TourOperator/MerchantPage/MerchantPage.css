@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #f5f5f5; }
+
+/* common styles */
+.warn-color {
+  color: #C93C00 !important; }
+
+.color-main {
+  color: #003E50 !important; }
+
+.regular-header, .agent-page .agent-elements .agent-info .agent-descr {
+  color: #272727;
+  font-size: 20px;
+  letter-spacing: 0.64px;
+  font-family: "Roboto", sans-serif; }
+
+.regular-label {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.11px;
+  font-family: "Roboto", sans-serif;
+  line-height: 14px; }
+
+/* common styles for static pages */
+.static-pages {
+  height: calc(100vh - 83px); }
+  .static-pages .static-pages-wrap {
+    position: relative;
+    min-height: calc(100% - 53px);
+    padding-top: 80px;
+    max-width: 1280px;
+    margin: 0 auto; }
+    .static-pages .static-pages-wrap .static-pages-header {
+      color: #2d2d2d;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px; }
+    .static-pages .static-pages-wrap .static-pages-body {
+      line-height: 29px;
+      font-size: 16px;
+      padding: 0 20px;
+      text-align: justify; }
+      .static-pages .static-pages-wrap .static-pages-body .static-pages-sub-header {
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-align: center; }
+      .static-pages .static-pages-wrap .static-pages-body .static-pages-empty {
+        height: 60px;
+        margin-top: 20px; }
+  .static-pages .static-footer {
+    position: relative;
+    flex: 0 0 auto; }
+
+/* autosuggest styles */
+.sug-above .react-autosuggest__suggestions-container--open {
+  bottom: 30px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(15, 15, 15, 0.39); }
+
+.react-autosuggest__suggestions-container--open {
+  line-height: 1.42;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(15, 15, 15, 0.39);
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: left;
+  max-height: 310px;
+  overflow-y: auto;
+  width: 100%; }
+  .react-autosuggest__suggestions-container--open .react-autosuggest__section-title {
+    padding: 10px 20px;
+    color: #272727;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    background: #f5f5f5; }
+  .react-autosuggest__suggestions-container--open .react-autosuggest__suggestion {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0;
+    color: #626262;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Roboto", sans-serif; }
+  .react-autosuggest__suggestions-container--open .react-autosuggest__suggestion--highlighted {
+    background-color: rgba(64, 144, 185, 0.15); }
+
+/* buttons */
+.button-main {
+  background: #003E50;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px; }
+  .button-main:disabled {
+    background: #c6c6c6 !important; }
+  .button-main:hover:disabled {
+    background: #c6c6c6 !important;
+    cursor: not-allowed; }
+  .button-main:hover {
+    background: #027590;
+    color: #ffffff; }
+
+.logged-wrap .align-grid {
+  display: flex; }
+
+.logged-wrap .logged-right-panel .info-panel {
+  height: 100%; }
+
+/* date range picker */
+.DateRangePicker__CalendarSelection {
+  background-color: #003E50;
+  border: #003E50; }
+
+/* Custom scrollbar */
+.scrollbar, .react-autosuggest__suggestions-container--open {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .scrollbar::-webkit-scrollbar, .react-autosuggest__suggestions-container--open::-webkit-scrollbar {
+    width: 5px; }
+  .scrollbar::-webkit-scrollbar-track, .react-autosuggest__suggestions-container--open::-webkit-scrollbar-track {
+    background: #f2f2f2; }
+  .scrollbar::-webkit-scrollbar-thumb, .react-autosuggest__suggestions-container--open::-webkit-scrollbar-thumb {
+    background-color: #c5c5c5;
+    border-radius: 10px; }
+  .scrollbar::-webkit-scrollbar-thumb:hover, .react-autosuggest__suggestions-container--open::-webkit-scrollbar-thumb:hover {
+    background: #888; }
+
+#root {
+  background: #f5f5f5;
+  min-height: 100%; }
+
+.no-margin {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+.pagination li a {
+  border: none;
+  background: transparent;
+  color: #8e8e8e;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  min-width: 4px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  line-height: 18px; }
+  .pagination li a:hover {
+    background: transparent;
+    color: #8e8e8e; }
+  .pagination li a a:focus {
+    background-color: transparent; }
+  .pagination li a img {
+    width: 13px;
+    margin-top: 3px;
+    height: 12px; }
+    .pagination li a img.right {
+      transform: rotate(180deg); }
+
+.pagination li:disabled:hover {
+  background: transparent; }
+
+.pagination li:disabled a:hover {
+  background-color: transparent; }
+
+.pagination li.active a, .pagination li.active a:focus, .pagination li.active a:active, .pagination li.active a:hover {
+  background-color: #45A1E4; }
+
+.pagination li.disabled a:focus {
+  background-color: transparent; }
+
+.pagination > .disabled > a, .pagination > .disabled > a:hover {
+  background: transparent; }
+
+.agent-page {
+  height: 100%;
+  font-family: "Roboto", sans-serif; }
+  .agent-page .agent-page-wrap {
+    background-color: #f5f5f5;
+    min-height: calc(100vh - 136px); }
+  .agent-page .agent-page-container {
+    padding: 0 0 20px;
+    max-width: 1102px;
+    margin: 0 auto; }
+    .agent-page .agent-page-container .agent-top-block {
+      width: 100%;
+      box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.31);
+      border-radius: 5px; }
+    .agent-page .agent-page-container .agent-bcg {
+      height: 205px;
+      position: relative; }
+      .agent-page .agent-page-container .agent-bcg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .agent-page .agent-page-container .agent-bcg .go-back-btn {
+        position: absolute;
+        top: 20px;
+        left: 65px;
+        color: #45A1E4;
+        background: #fff;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        height: 38px;
+        font-size: 15px;
+        letter-spacing: 0.48px;
+        line-height: 19px;
+        outline: none;
+        box-shadow: 0 0 11px 0 rgba(26, 80, 112, 0.16);
+        cursor: pointer;
+        transition: all ease-in-out 0.2s; }
+        .agent-page .agent-page-container .agent-bcg .go-back-btn:hover {
+          text-decoration: underline; }
+        .agent-page .agent-page-container .agent-bcg .go-back-btn img {
+          margin-right: 10px; }
+        .agent-page .agent-page-container .agent-bcg .go-back-btn img {
+          width: 15px;
+          height: 15px;
+          margin-right: 10px; }
+  .agent-page .agent-aside {
+    margin-left: 50px;
+    margin-top: 30px; }
+    .agent-page .agent-aside .aside-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #8e8e8e;
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 20px;
+      cursor: pointer; }
+      .agent-page .agent-aside .aside-item a {
+        text-decoration: none;
+        color: #8e8e8e;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .agent-page .agent-aside .aside-item img {
+        width: 16px;
+        margin-right: 15px;
+        height: 18px; }
+      .agent-page .agent-aside .aside-item span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+  .agent-page .agent-header {
+    line-height: 30px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .agent-page .agent-block-header {
+    margin-bottom: 20px; }
+  .agent-page .agent-summary, .agent-page .agent-tours {
+    max-width: 754px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.22);
+    margin-top: 30px;
+    padding: 30px; }
+    .agent-page .agent-summary .summary-text, .agent-page .agent-tours .summary-text {
+      color: #525252;
+      font-size: 14px;
+      line-height: 21px;
+      white-space: pre-line; }
+  .agent-page .agent-tours {
+    margin-bottom: 10px; }
+  .agent-page .tours-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px; }
+    .agent-page .tours-list .search-item-container {
+      width: 320px;
+      margin-right: 0; }
+      .agent-page .tours-list .search-item-container .tour-cost {
+        font-weight: bold;
+        line-height: 20px;
+        padding: 0 11px 11px 0;
+        color: #272727;
+        font-size: 16px;
+        letter-spacing: 0.69px; }
+  .agent-page .agent-elements {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100px; }
+    .agent-page .agent-elements .agent-avatar {
+      margin-left: 50px;
+      width: 164px;
+      height: 164px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      transform: translateY(-50%);
+      box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.15); }
+    .agent-page .agent-elements .agent-avatar-img {
+      width: 147px;
+      height: 147px; }
+      .agent-page .agent-elements .agent-avatar-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover; }
+    .agent-page .agent-elements .agent-info {
+      width: 80%;
+      padding: 20px 20px 25px 0; }
+  .agent-page .agent-pagination {
+    width: 100%;
+    text-align: center;
+    max-width: 754px;
+    margin-top: 20px; }
+
+@media (max-width: 991px) {
+  .agent-page .agent-elements .agent-avatar {
+    margin-left: 10px; }
+  .agent-page .agent-aside {
+    margin-left: 10px; }
+  .agent-page .tours-list .search-item-container {
+    width: 49%; }
+  .agent-page .agent-page-container .agent-bcg .go-back-btn {
+    left: 25px; } }
+
+@media (max-width: 530px) {
+  .agent-page .tours-list .search-item-container {
+    width: 100%; }
+  .agent-page .agent-elements {
+    display: block; }
+    .agent-page .agent-elements .agent-avatar {
+      transform: none;
+      top: -185px;
+      right: 40px; } }

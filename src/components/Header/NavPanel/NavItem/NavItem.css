@@ -1,0 +1,27 @@
+.nav-item {
+  height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  line-height: 19px;
+  text-align: center;
+  border-left: 1px solid #006683;
+  padding: 0 15px;
+  cursor: pointer; }
+  .nav-item:last-child {
+    border-left: none;
+    border-right: 1px solid #006683; }
+  .nav-item.map-item {
+    border-right: 1px solid #006683; }
+  .nav-item:hover, .nav-item:active, .nav-item:focus, .nav-item:visited {
+    color: #57A8BE;
+    text-decoration: none; }
+  .nav-item a {
+    text-decoration: none;
+    color: #ffffff; }
+    .nav-item a:hover {
+      color: #57A8BE;
+      text-decoration: none; }

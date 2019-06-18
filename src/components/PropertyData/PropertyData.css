@@ -1,0 +1,19 @@
+.container-data .container-background {
+  position: relative; }
+  .container-data .container-background .container-bg-img {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .container-data .container-background .info-panel {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none; }
+    .container-data .container-background .info-panel .page-header {
+      border-bottom: none;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold; }
+      .container-data .container-background .info-panel .page-header small {
+        color: #ffffff; }

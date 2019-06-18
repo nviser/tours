@@ -1,0 +1,9 @@
+.side-info {
+  font-size: 12px;
+  padding: 0 30px 40px 30px; }
+  .side-info .side-info-header {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 25px 0 30px; }
+  .side-info p {
+    line-height: 16px; }

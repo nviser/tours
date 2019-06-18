@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="10px" viewBox="0 0 7 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>pagger arrow@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SEARCH-TOUR" transform="translate(-307.000000, -1935.000000)" fill="#C6C6C6" fill-rule="nonzero">
+            <g id="Group-12" transform="translate(287.000000, 1930.000000)">
+                <g id="Group-11" transform="translate(0.000000, 4.000000)">
+                    <polygon id="pagger-arrow" transform="translate(23.750000, 5.935500) rotate(-270.000000) translate(-23.750000, -5.935500) " points="20.121 3 23.75 6.648 27.379 3 28.5 4.121 23.75 8.871 19 4.121"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

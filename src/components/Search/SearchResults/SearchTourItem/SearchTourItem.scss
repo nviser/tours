@@ -1,0 +1,191 @@
+@import "../../../../assets/scss/variables.scss";
+
+.__react_component_tooltip {
+  background-color: #F15B59;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.34);
+  color: #FFFFFF;
+  font-size: 8px;
+  line-height: 9px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 0;
+  &.place-bottom {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.search-item-container {
+  border-radius: 5px;
+  width: 312px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  .tour-item {
+    margin-bottom: 0px;
+    display: block;
+    .tour-img-block {
+      width: 100%;
+      height: 156px;
+      position: relative;
+      .fav-tour {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        font-size: 32px;
+        color: #d60b29;
+        cursor: pointer;
+        &.fa-heart-o {
+          color: #fff;
+        }
+      }
+    }
+    .tour-main-block {
+      padding: 15px 10px 11px;
+      position: relative;
+      .tour-main-top-block {
+        display: flex;
+        justify-content: space-between;
+        .tour-top {
+          width: 100%;
+          .tour-category {
+            .category-item {
+              width: 100%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              color: $color_green;
+              font-size: 10px;
+              font-weight: 500;
+              line-height: 17px;
+              text-transform: uppercase;
+            }
+          }
+          .tour-location {
+            .map-marker {
+              color: $color_text_regular;
+            }
+            .tour-location-city {
+              font-size: 12px;
+              line-height: 20px;
+              width: 100%;
+              color: $color_text_regular;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .middot {
+              color: $color_green;
+            }
+          }
+        }
+      }
+      .tour-info {
+        justify-content: flex-start;
+        .middot {
+          font-size: 20px;
+        }
+        .info-item {
+          margin-right: 0;
+          font-weight: normal;
+          line-height: 20px;
+          color: $color_text_regular;
+          span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .item-bottom {
+            .icon-mobility {
+              height: auto;
+            }
+          }
+        }
+        .info-item {
+          display: block;
+          &.age-item {
+            max-width: 40%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .tour-rating {
+        margin-bottom: 0;
+        .stars {
+          margin-right: 5px;
+        }
+        .reviews {
+          font-size: 9px;
+          color: $color_text_regular;
+        }
+      }
+      .tour-bottom {
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0.69px;
+        line-height: 20px;
+        color: $color_text;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+.search-tour-header {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 17px;
+  padding-top: 0px;
+  padding-bottom: 7px;
+  color: $color_text;
+  cursor: pointer;
+  max-width: 370px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media(max-width: 1400px) {
+  .search-item-container {
+    width: 48%;
+    margin-right: 4%;
+  }
+}
+
+@media(max-width: 1280px) {
+  .search-result-title {
+    margin-right: 4%;
+
+  }
+}
+
+@media(max-width: 1200px) {
+  .search-item-container {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 991px) {
+  .search-item-container {
+    width: 48%;
+    margin-right: 4%;
+  }
+}
+
+@media(max-width: 640px) {
+  .search-item-container {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 480px) {
+  .search-form {
+    display: none;
+  }
+}

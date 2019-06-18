@@ -1,0 +1,17 @@
+.change-pass-popup {
+  .container {
+    width: 100%;
+  }
+  .pass-label {
+    color: #8E8E8E;
+    font-size: 11px;
+    font-weight: 500;
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .password-warn-message {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}

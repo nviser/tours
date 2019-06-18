@@ -1,0 +1,17 @@
+.picker-occured-date, .location-selector {
+  width: 100%;
+  border: 1px solid #adadad;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #272727;
+  &::placeholder {
+    color: #272727;
+  }
+}
+.react-datepicker-wrapper, .react-datepicker__input-container {
+  width: 100%;
+}
+.react-datepicker-popper {
+  z-index: 2;
+}

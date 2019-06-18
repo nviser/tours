@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>facebook@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TOUR-PROFILE" transform="translate(-243.000000, -439.000000)" fill="#8E8E8E" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(237.000000, 402.000000)">
+                <path d="M11.3125,42.5 L13.9375,42.5 L13.609375,45.125 L11.3125,45.125 L11.3125,53 L7.90820312,53 L7.90820312,45.125 L6.0625,45.125 L6.0625,42.5 L7.90820312,42.5 L7.90820312,40.7363281 C7.90820312,39.5878849 8.19530963,38.7197295 8.76953125,38.1318359 C9.34375287,37.5439424 10.3007746,37.25 11.640625,37.25 L13.9375,37.25 L13.9375,39.875 L12.5429688,39.875 C12.0234349,39.875 11.6884773,39.9570304 11.5380859,40.1210938 C11.3876946,40.2851571 11.3125,40.5585918 11.3125,40.9414062 L11.3125,42.5 Z" id="facebook"></path>
+            </g>
+        </g>
+    </g>
+</svg>

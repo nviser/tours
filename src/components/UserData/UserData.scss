@@ -1,0 +1,81 @@
+@import "../../assets/scss/variables.scss";
+
+.user-data {
+  .logged-background {
+    .logged-bg-img {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  .logged-info-block {
+    padding-bottom: 40px;
+    border-bottom: 1.5px solid #C6C6C6;
+    .container {
+      .show-grid {
+        padding: 0 30px;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+    .grid-blocks {
+      height: 100%;
+    }
+    .user-img {
+      margin-top: -30px;
+      width: 140px;
+      box-shadow: 0 0 10px #000;
+    }
+    .logged-info {
+      line-height: 1.8;
+      .info-header {
+        font-weight: 700;
+        font-size: 20px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+    .logged-actions {
+      .logged-socials {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .social-for-img {
+          cursor: pointer;
+          width: 30px;
+          overflow: hidden;
+          &.hidden {
+            display: none;
+          }
+          .social-img {
+            width: 140px;
+            &.social-facebook {
+              margin-left: -39px;
+            }
+            &.social-twitter {
+              margin-left: -75px;
+            }
+            &.social-pint {
+              margin-left: -111px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+  .logged-contact {
+    margin-top: 20px;
+    padding: 0 30px 20px 30px;
+    border-bottom: 1.5px solid #C6C6C6;
+    text-transform: uppercase;
+    line-height: 1.6;
+    font-size: 10px;
+    span {
+      color: $color_main_header;
+      font-weight: bold;
+      text-transform: none;
+      font-size: 16px;
+    }
+  }
+}

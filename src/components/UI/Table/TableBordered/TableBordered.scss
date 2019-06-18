@@ -1,0 +1,97 @@
+@import "../../../../assets/scss/variables.scss";
+
+.bordered-table {
+    color: #272727;
+    thead {
+        tr {
+            th {
+                font-weight: 500;
+                line-height: 17px;
+                font-size: 13px;
+            }
+        }
+    }
+    tbody {
+        td {
+            min-height: 65px;
+            height: 100%;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+    &-cell {
+        display: flex;  
+        align-items: center;
+        min-height: 65px;
+        font-size: 13px;
+        line-height: 15px;
+        color: $color_text_regular;
+        img {
+            height: 50px;
+            border-radius: 50%;
+            width: 50px;
+        }
+        div:nth-child(2) {
+            margin-left: 10px;
+        }
+        span {
+            color: #027590;
+        }
+    }
+    &-border {
+        display: flex;
+        align-items: center;
+        padding: 15px 15px 15px 0;
+        border-right: 1px solid #ddd; 
+        min-height: 75px;
+        color: #525252;
+        font-size: 13px;
+        line-height: 15px;
+        &-date {
+            display: flex;
+            align-items: center;
+            padding: 15px 15px 15px 0;
+            border-right: 1px solid #ddd; 
+            min-height: 75px;
+            min-width: 110px;
+            color: #525252;
+            font-size: 13px;
+            line-height: 15px;
+        }
+        &-total {
+            display: flex;
+            align-items: center;
+            padding: 15px 15px 15px 0;
+            border-right: 1px solid #ddd; 
+            min-height: 75px;
+            min-width: 145px;
+            text-transform: uppercase;
+            color: #525252;
+            font-size: 13px;
+            line-height: 15px;
+        }
+        &-tours {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 15px 15px 0;
+            border-right: 1px solid #ddd; 
+            min-height: 75px;
+            min-width: 75px;
+            color: #525252;
+            font-size: 13px;
+            line-height: 15px;
+        }
+    }
+    &-no-border{
+        display: flex;
+        align-items: center;
+        padding: 15px 15px 15px 0;
+        min-height: 75px;
+        //color: #964CBE;
+        color: #007FA2;
+        &.status {
+            text-transform: capitalize;
+        }
+    }
+}

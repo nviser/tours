@@ -1,0 +1,133 @@
+@import "../../../../assets/scss/variables.scss";
+@import "../../../../assets/scss/common.scss";
+
+$container-width: 100%;
+$container-filter-width: 100%;
+
+.filter-block {
+    width: $container-filter-width;
+    max-width: $container-filter-width;
+    padding: 20px 20px 20px 0px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    overflow: hidden;
+    .filters {
+        @extend .scrollbar;
+        overflow-y: auto;
+        height: 100%;
+        padding-right: 7px;
+    }
+    .filter-header {
+        color: $color-text;
+        font-weight: 500;
+        font-family: $font_roboto;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        &.top-header {
+            margin-top: 0;
+        }
+    }
+    .filter-body {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: flex-start;
+        margin: 10px 0;
+        border-bottom: 1px solid #E6E6E6;
+        padding-bottom: 20px;
+        .filter-item {
+            height: 40px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+            width: 33.33%;
+            transition: all .3s ease;
+            &.active {
+                .filter-checkbox {
+                    transition: all .3s ease;
+                    background: #008FB7;
+                    border: none;
+                }
+            }
+            .filter-title {
+                color: #272727;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+            }
+            .filter-checkbox {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #C6C6C6;
+                margin-right: 10px;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    top: 4px;
+                    left: 10px;
+                    width: 3px;
+                    height: 12px;
+                    background: #FFFFFF;
+                    transform: rotateZ(45deg);
+                }
+                &:after {
+                    position: absolute;
+                    content: '';
+                    top: 7px;
+                    left: 5px;
+                    width: 3px;
+                    height: 8px;
+                    background: #FFFFFF;
+                    transform: rotateZ(-45deg);
+                }
+            }
+        }
+    }
+    .filter-action-block {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 0;
+        align-items: center;
+        .apply-btn {
+            height: 40px;
+            width: 100px;
+            border: none;
+            font-size: 13px;
+            font-weight: bold;
+            background: #7BC372;
+            border-radius: 3px;
+            text-transform: uppercase;
+            color: #ffffff;
+            outline: none;
+        }
+        .reset-btn {
+            background: none;
+            height: 18px;
+            border: none;
+            margin-right: 40px;
+            text-transform: capitalize;
+            outline: none;
+            font-size: 20px;
+            letter-spacing: 0.64px;
+            line-height: 19px;
+            font-family: $font_roboto;
+            color: $color_text;
+        }
+    }
+}
+@media(max-width: 1400px) {
+    .filter-block .filter-body .filter-item {
+        width: 100%;
+    }
+}
+
+@media(max-width: 470px) {
+    .filter-block .filter-body .filter-item {
+        width: 100%;
+    }
+}

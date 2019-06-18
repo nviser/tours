@@ -1,0 +1,17 @@
+.static-footer {
+  background-color: #003E50; }
+  .static-footer .static-footer-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .static-footer .static-footer-wrap .term-item {
+      padding: 20px; }
+    .static-footer .static-footer-wrap .static-footer-terms {
+      display: flex; }
+    .static-footer .static-footer-wrap a {
+      text-decoration: none;
+      color: #ffffff;
+      display: block;
+      text-align: center; }

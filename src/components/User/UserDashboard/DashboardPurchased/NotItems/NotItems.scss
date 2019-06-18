@@ -1,0 +1,32 @@
+@import "../../../../../assets/scss/variables.scss";
+@import "../../../../../assets/scss/common.scss";
+
+.not-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    &-btn {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        @include regularBtn(#fff, #fff, #7BC372, #6AA962, none, 3px, 203px, 49px);
+    }
+    &-description {
+        color: #7A7878;	
+        font-family: Roboto;	
+        font-size: 20px;	
+        line-height: 24px;	
+        text-align: center;
+    }
+    &-img {
+        height: 133px;
+        width: 155px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+}
+

@@ -1,0 +1,76 @@
+.board-page {
+  height: 100%;
+  font-family: "Roboto", sans-serif; }
+  .board-page .page-logo {
+    text-align: center;
+    padding: 40px 0; }
+    .board-page .page-logo .static-logo {
+      width: 22em; }
+  .board-page .board-header, .board-page .board-reg-header {
+    letter-spacing: 0.9px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #2d2d2d; }
+  .board-page .board-header {
+    padding-bottom: 25px; }
+  .board-page .journal-board-header {
+    padding: 5px 0; }
+  .board-page .dashboard-payment-methods .dashboard-payment-methods-header {
+    padding-top: 5px; }
+  .board-page .board-page-wrap {
+    background-color: #f5f5f5;
+    height: 100%; }
+  .board-page .board-page-container {
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 80px);
+    padding-bottom: 30px; }
+    .board-page .board-page-container.dashboard {
+      padding-bottom: 0; }
+    @media (min-width: 320px) and (max-width: 992px) {
+      .board-page .board-page-container .board-section {
+        margin-top: 25px; } }
+    .board-page .board-page-container .board-section .board-journal {
+      width: 100%;
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11); }
+    .board-page .board-page-container .board-section .board-container {
+      margin-top: 30px; }
+      .board-page .board-page-container .board-section .board-container .board-tour {
+        padding: 15px 10px 20px 25px;
+        height: 480px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11); }
+      .board-page .board-page-container .board-section .board-container .board-tour-methods {
+        padding: 15px 15px 15px 15px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11); }
+      .board-page .board-page-container .board-section .board-container .board-payment {
+        padding: 20px 25px;
+        height: 632px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11); }
+  .board-page .static-footer {
+    position: relative; }
+
+.journal-board {
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11); }
+  .journal-board .not-items {
+    height: calc(100% - 45px); }
+
+.dashboard-payment-methods {
+  margin-bottom: 30px; }
+
+.board-tour-methods.fixed-heigth {
+  height: 480px !important; }

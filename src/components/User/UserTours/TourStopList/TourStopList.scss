@@ -1,0 +1,136 @@
+@import "../../../../assets/scss/variables.scss";
+
+.stop-list-page {
+  height: 100%;
+  min-height: 100%;
+  font-family: $font_roboto;
+  background-color: #fff;
+  .stop-list-wrap {
+    min-height: 100%;
+    .left-block {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  .stop-list-main-block {
+    width: 100%;
+    @media(max-width: 992px) {
+      align-self: center;
+      width: 100%;
+     }
+    .stop-item-list {
+      margin: 40px 0;
+    }
+    .stop-point-add {
+      margin-top: 35px;
+      padding: 20px;
+      border: 1px solid #45A1E4;	
+      background-color: #FFFFFF;	
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.11);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #45A1E4;
+      cursor: pointer;
+      margin-bottom: 20px;
+      .add-text {
+        color: #45A1E4;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      i{
+        color: #45A1E4;
+        font-size: 1.4em;
+      }
+    }
+  }
+  .stop-list-container {
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .static-footer {
+    margin-top: -56px;
+    position: relative;
+  }
+  .stop-title {
+    margin-top: 50px;
+  }
+  .left-panel {
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 3px 0px 6px -3px rgba(0, 0, 0, 0.24);
+    padding-bottom: 55px;
+  
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: #c6c6c6;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #888;
+    }
+    @media(max-width: 1200px) {
+      box-shadow: none;
+    }
+  }
+  .rigth-panel {
+    padding-left: 0;
+    padding-right: 0;
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .stop-list-page{
+    .stop-list-container{
+      .left-block{
+        .left-panel{
+          padding: 15px;
+        }
+      }
+      .stop-bottom{
+        padding: 15px;
+        .info-string{
+          display: none;
+        }
+        justify-content: space-between;
+      }
+    }
+    .Modal{
+      //left: 20px;
+      //top: 20px;
+      //right: 20px;
+      //bottom: 20px;
+      //.preview{
+      //  width: 100%;
+      //}
+      &.tour-stop-delete-modal {
+        //height: 295px;
+        //width: 543px;
+      }
+    }
+  }
+}

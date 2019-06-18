@@ -1,0 +1,26 @@
+.filter-panel {
+  .show-grid {
+    display: flex;
+    align-items: center;
+  }
+  .picker-title {
+    font-size: 13px;
+  }
+  .picker-start-date, .picker-end-date {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #adadad;
+    padding: 6px;
+  }
+  .btn-toolbar {
+    .btn-group {
+      width: 100%;
+      .btn-default {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

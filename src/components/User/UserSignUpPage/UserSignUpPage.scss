@@ -1,0 +1,109 @@
+@import "../../../assets/scss/variables.scss";
+
+.sign-up-page {
+  display: flex;
+  flex-direction: column;
+  flex:100%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45.18deg, #4090B9 0%, #8CD2E8 100%);
+  .sign-up-form {
+    background-color: #fff;
+    width: 620px;
+    padding: 35px 94px;
+  }
+  .page-logo {
+    text-align: center;
+    padding: 40px 0 20px;
+    width: 230px;
+  }
+  .sign-up-header {
+    text-align: center;
+    margin:0 0 35px 0;
+    font-family: "Roboto", sans-serif;
+    color: $color_main_header;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    line-height: 19px;
+  }
+  .sign-up-input,
+  .react-autosuggest__input{
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    padding: 12px 6px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+  }
+  .btn-sign-up{
+    margin: 15px 0 30px 0;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    background-color: #7BC372;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    &:hover{
+      background-color: #7ec367;
+    }
+  }
+  .mb-0{
+    margin-bottom: 0;
+  }
+  .sign-up-text{
+    color: #8E8E8E;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 15px;
+    text-align: center;
+    a{
+      font: inherit;
+      color: inherit;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+  //.form-control-group .input-errors{
+  //  top:-3px;
+  //  font-family: "Roboto", sans-serif;
+  //}
+  .sign-up-footer{
+    width: 100%;
+    height: auto;
+    margin: 60px 0 30px 0;
+  }
+  .already-text{
+    color: #8E8E8E;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    .go-link{
+      color: #8E8E8E;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .sign-up-page{
+    .sign-up-form{
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .sign-up-page{
+    .sign-up-form{
+      width: 85%;
+      padding: 20px 15px;
+    }
+  }
+}

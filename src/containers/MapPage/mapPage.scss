@@ -1,0 +1,12 @@
+.map-page {
+  height: calc(100vh - 53px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .map {
+    &> div {
+      min-height: calc(100vh - 53px);
+      height: unset !important;
+    }
+  }
+}

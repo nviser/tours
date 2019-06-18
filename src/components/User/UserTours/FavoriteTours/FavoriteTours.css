@@ -1,0 +1,47 @@
+.favorite-container {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (max-width: 992px) {
+    .favorite-container {
+      justify-content: center; } }
+  .favorite-container .search-item-container {
+    width: 31%;
+    margin-right: 30px; }
+    .favorite-container .search-item-container:nth-child(3n) {
+      margin-right: 0; }
+    .favorite-container .search-item-container .tour-price {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 0.56px;
+      line-height: 20px;
+      padding: 0 11px 11px 0; }
+  .favorite-container .search-item-container:last-child {
+    margin-right: 0; }
+
+.board-section .pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.board-section .no-data {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11); }
+
+@media screen and (max-width: 1200px) {
+  .favorite-container {
+    justify-content: space-between; }
+    .favorite-container .search-item-container {
+      width: 48%;
+      margin-right: 0; } }
+
+@media (max-width: 580px) {
+  .favorite-container .Modal {
+    width: calc(100% - 20px); } }
+
+@media screen and (max-width: 530px) {
+  .favorite-container {
+    justify-content: center; }
+    .favorite-container .search-item-container {
+      width: 100%; } }

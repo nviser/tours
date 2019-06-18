@@ -1,0 +1,49 @@
+$color: #8CD2E8;
+$dot-size: 6px;
+
+.add-payment-method {
+  height: 136px;
+  width: 270px;
+  border: 1px solid $color;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.add-payment-title {
+  color: $color;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.icon-three-dots{
+  display: block;
+  border-radius: 100%;
+  background-color: $color;
+  position: relative;
+  width: $dot-size;
+  height: $dot-size;
+  &:before,
+  &:after{
+    display: block;
+    content: '';
+    width: $dot-size;
+    height: $dot-size;
+    background-color: $color;
+    position: absolute;
+    border-radius: 100%;
+  }
+  &:before{
+    left:-$dot-size*2;
+  }
+  &:after{
+    right: -$dot-size*2;
+  }
+}

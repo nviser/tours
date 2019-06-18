@@ -1,0 +1,34 @@
+.route-stop {
+  padding: 20px;
+  border: 1px solid #008FB7;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  .route-stop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+  .route-stop-form {
+    display: block;
+    .insert-building {
+      width: 100%;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #272727;
+      .react-autosuggest__input {
+        width: 100%;
+        padding-left: 10px;
+        height: 32px;
+        &::placeholder {
+          color: #9c9c9c;
+        }
+      }
+    }
+  }
+}

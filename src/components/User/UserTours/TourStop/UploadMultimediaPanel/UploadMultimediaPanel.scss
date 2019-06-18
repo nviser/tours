@@ -1,0 +1,32 @@
+.multi-panel {
+    margin-top: 30px;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+       
+        &-title {
+            font-size: 12px;
+            letter-spacing: 0.13px;
+            line-height: 16px;
+            color: #8e8e8e;
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
+    }
+
+    &-inputs {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    &-once {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .upload-video {
+            margin-bottom: 20px;
+        }
+    }
+}

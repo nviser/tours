@@ -1,0 +1,6 @@
+.rating-group i {
+  color: #ffc06c;
+  margin-right: 4.5px;
+  font-size: 12px; }
+  .rating-group i.empty {
+    color: #e5e5e5; }

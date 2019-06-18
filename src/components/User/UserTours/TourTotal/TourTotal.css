@@ -1,0 +1,18 @@
+.tour-total {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px; }
+  .tour-total .total-stops {
+    margin-right: 40px; }
+  .tour-total .total-top-text {
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 11px;
+    color: #8e8e8e;
+    text-transform: uppercase; }
+  .tour-total .total-bottom-text {
+    color: #008FB7;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px; }

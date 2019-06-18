@@ -1,0 +1,28 @@
+@import '../../../node_modules/loaders.css/src/animations/ball-clip-rotate-multiple.scss';
+
+/*  loader  */
+
+.loader {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 9999999999;
+}
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-screen-fixed{
+  position: fixed;
+  left:0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  overflow: hidden;
+}

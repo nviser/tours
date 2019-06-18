@@ -1,0 +1,149 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  flex: 100%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45.18deg, #4090B9 0%, #8CD2E8 100%); }
+  .login-page .login-as-redirect {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    justify-content: center;
+    align-items: center; }
+  .login-page .login-form {
+    background-color: #fff;
+    width: 620px;
+    padding: 35px 94px; }
+  .login-page .page-logo {
+    text-align: center;
+    padding: 40px 0 20px; }
+    .login-page .page-logo .static-logo {
+      width: 230px; }
+  .login-page .login-header {
+    text-align: center;
+    margin: 0 0 35px 0;
+    font-family: "Roboto", sans-serif;
+    color: #2d2d2d;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    line-height: 19px; }
+  .login-page .btn-fb, .login-page .gl-login {
+    width: 100%;
+    position: relative;
+    height: 35px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 0; }
+  .login-page .btn-fb {
+    background-color: #4267B2;
+    color: white;
+    font-family: "Roboto", sans-serif; }
+    .login-page .btn-fb div div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .login-page .btn-fb div div svg {
+        width: 20px;
+        height: 20px; }
+    .login-page .btn-fb > div {
+      position: absolute;
+      left: 50px; }
+  .login-page .gl-login {
+    background-color: #EEEEEE; }
+    .login-page .gl-login img {
+      position: absolute;
+      left: 50px; }
+    .login-page .gl-login button {
+      font-family: "Roboto", sans-serif;
+      background-color: #EEEEEE;
+      color: rgba(0, 0, 0, 0.54);
+      width: 100%;
+      height: inherit; }
+  .login-page .separat-or {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0 30px 0;
+    font-size: 13px;
+    color: #E3E3E3; }
+    .login-page .separat-or:after, .login-page .separat-or:before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 45%;
+      background-color: #E3E3E3; }
+  .login-page .login-input {
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    padding: 12px 6px; }
+  .login-page .btn-login {
+    margin: 30px 0;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    background-color: #7BC372;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase; }
+    .login-page .btn-login:hover {
+      background-color: #7ec367; }
+  .login-page .remember-forgot {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .login-page .remember-forgot .remember-me,
+    .login-page .remember-forgot .go-link {
+      font-family: "Roboto", sans-serif;
+      color: #45A1E4;
+      font-size: 11px; }
+    .login-page .remember-forgot .remember-me {
+      display: flex;
+      align-items: center;
+      color: #8E8E8E; }
+      .login-page .remember-forgot .remember-me input {
+        margin: 0 5px 0 0; }
+  .login-page .mb-0 {
+    margin-bottom: 0; }
+  .login-page .sign-up-text {
+    color: #8E8E8E;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 15px;
+    text-align: center; }
+    .login-page .sign-up-text a {
+      font: inherit;
+      color: inherit;
+      font-weight: bold;
+      text-decoration: underline; }
+  .login-page .login-footer {
+    width: 100%;
+    height: auto;
+    margin: 60px 0 30px 0; }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .login-page .login-form {
+    width: 60%; }
+    .login-page .login-form .btn-fb > div {
+      left: 30px; }
+    .login-page .login-form .gl-login img {
+      left: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .login-page .login-form {
+    width: 85%;
+    padding: 20px 15px; }
+    .login-page .login-form .btn-fb > div {
+      left: 20px; }
+    .login-page .login-form .gl-login img {
+      left: 20px; } }

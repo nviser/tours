@@ -1,0 +1,34 @@
+.journal-item {
+  margin: 0 0 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.6);
+}
+
+.journal-item .title {
+  margin: 0 0 15px;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.journal-item .date {
+  margin: 0 0 15px;
+  font-size: 80%;
+  font-weight: bold;
+  color: #999999;
+}
+
+.journal-item .content {
+  margin: 0 0 15px;
+  line-height: 1.5;
+}
+
+.journal-item .slick-slider .slick-arrow {
+  z-index: 9999;
+}
+
+.journal-item .slick-slider .slick-arrow.slick-prev{
+  left: 10px;
+}
+.journal-item .slick-slider .slick-arrow.slick-next{
+  right: 10px;
+}

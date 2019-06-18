@@ -1,0 +1,7 @@
+.info-pannel {
+  background-color: #f2f2f2;
+  height: 100%; }
+  .info-pannel .side-map {
+    position: relative;
+    width: 100%;
+    height: 388px !important; }

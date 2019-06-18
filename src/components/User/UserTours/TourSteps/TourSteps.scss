@@ -1,0 +1,52 @@
+@import "../../../../assets/scss/variables.scss";
+
+$gary: #DDDDDD;
+$dark_gray: #525252;
+.steps-block {
+  border-bottom: 2px solid $color_divider;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 20px;
+  .separator {
+    height: 1px;
+    background: $gary;
+    width: 7em;
+    margin: 0 10px;
+  }
+  .step-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $gary;
+    .step-number {
+      width: 23px;
+      height: 23px;
+      border: 1px solid $gary;
+      color: $gary;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 5px;
+      i {
+        font-size: 16px;
+      }
+    }
+    &.active {
+      font-weight: bold;
+      font-size: 15px;
+      color:$dark_gray;
+      .step-number {
+        width: 30px;
+        height: 30px;
+        color:$dark_gray;
+        border: 1px solid $dark_gray;
+      }
+    }
+  }
+}
+.step-title {
+  white-space: nowrap;
+}

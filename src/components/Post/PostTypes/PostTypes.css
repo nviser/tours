@@ -1,0 +1,6 @@
+.btn-toolbar .post-type-btn {
+  padding: 10px; }
+  .btn-toolbar .post-type-btn.active {
+    background: #003E50;
+    color: #ffffff;
+    border: none; }

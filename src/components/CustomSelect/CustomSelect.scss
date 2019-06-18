@@ -1,0 +1,117 @@
+.custom-select-group{
+  background-color: white;
+  position: relative;
+  width: 32%;
+  @media (max-width: 500px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .custom-select-options{
+    position: absolute;
+    z-index: 1;
+    max-height: 220px;
+    overflow-y: auto;
+    width: 100%;
+    left:0;
+    top: calc(100% + 1px);
+    background-color: white;
+    box-shadow: 0 0 12px 0 rgba(15,15,15,0.18);
+    .custom-select-option{
+      padding: 12px;
+      cursor: default;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      &:hover{
+        background-color: rgba(64,144,185,0.15);
+      }
+      &.selected{
+        .bullet{
+          i{
+            display: block;
+          }
+        }
+      }
+      .bullet{
+        margin-right: 10px;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+        border:1px solid #008FB7;
+        background-color: white;
+        i{
+          line-height: 0;
+          display: none;
+        }
+      }
+    }
+  }
+  &.opened{
+    border-color: #000000;
+    .custom-select-options{
+      display: block;
+    }
+  }
+  &.closed{
+    .custom-select-options{
+      display: none;
+    }
+  }
+  .custom-select-group-select{
+    border: 1px solid #E3E3E3;
+    border-radius: 3px;
+    position: relative;
+    padding: 12px 24px 12px 12px;
+    outline: none;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    .fa{
+      position: absolute;
+      right: 12px;
+      top: 12px;
+    }
+    .selected-value,
+    .selected-item-multiple{
+      cursor: default;
+      user-select: none;
+    }
+    .selected-item-multiple{
+      &:last-child{
+        .separator{
+          display: none;
+        }
+      }
+    }
+    .placeholder{
+      color: #8E8E8E;
+    }
+  }
+  &.multiple{
+    .custom-select-options{
+      .custom-select-option{
+        &.selected{
+          .bullet{
+            background-color: #008FB7;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  &.single{
+    .custom-select-options{
+      .custom-select-option{
+        .bullet{
+          color:#008FB7;
+          background-color: white;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}

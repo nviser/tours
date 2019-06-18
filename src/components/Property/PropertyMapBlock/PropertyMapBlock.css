@@ -1,0 +1,8 @@
+.property-map-block.activated .thumbnail {
+  background: #cece;
+  transition: background .5s ease; }
+
+.property-map-block .thumbnail {
+  margin-bottom: 0;
+  font-size: 11px;
+  transition: background .5s ease; }

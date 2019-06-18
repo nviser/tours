@@ -1,0 +1,296 @@
+@import "../../../../assets/scss/variables.scss";
+@import "../../../../assets/scss/common.scss";
+
+.page-label {
+  color: #8E8E8E;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.11px;
+  line-height: 14px;
+}
+
+.tour-title-input, .tour-price-input {
+  @include input();
+}
+.tour-select {
+  width: 32%;
+  @media(max-width:500px){
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  &.control-active {
+    select {
+      color: #272727;
+      // border-bottom: 2px solid $color_main;
+      font-weight: 300;
+    }
+  }
+  select {
+    color: $gray-01;
+    font-size: 15px;
+    height: 41px;
+    border: 1px solid #E3E3E3;	
+    border-radius: 2px;
+    font-weight: 300;
+    line-height: 18px;
+    border-radius: 0;
+    box-shadow: none;
+    &:focus {
+      border-color: #E3E3E3;
+      box-shadow: none;
+    }
+  }
+}
+.modal-sign-in-label {
+  @extend .page-label;
+  margin-bottom: 3px!important;
+}
+
+.btn-next {
+  &:disabled {
+    background: $gray-01;
+  }
+}
+
+.create-tour-page {
+  height: 100%;
+  min-height: 100%;
+  font-family: $font_roboto;
+  
+  .create-tour-wrap {
+    background-color: #fff;
+    min-height: 100%;
+  }
+  .create-tour-main-block {
+    min-height: 100%;
+    .upload-video {
+      margin-bottom: 40px;
+      border-radius: 2px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2px;
+      }
+    }
+  }
+  .create-tour-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  
+    .left-panel {
+      padding-left: 70px;
+      padding-right: 70px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 150px);
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-shadow: 3px 0px 6px -3px rgba(0, 0, 0, 0.24);
+      padding-bottom: 55px;
+      @media(max-width: 992px) {
+        align-self: center;
+        width: 100%;
+     }
+       &::-webkit-scrollbar {
+        width: 5px;
+      }
+    
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+    
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background-color: #c6c6c6;
+        border-radius: 10px;
+      }
+    
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #888;
+      }
+    }
+    .left-block {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      padding-left: 15px;
+      @media(max-width: 992px) {
+        padding-left: 0;
+      }
+    }
+    .rigth-panel {
+      padding: 0;
+      box-shadow: 1px 0px 17px -3px #000000 inset;
+      padding-left: 5px;
+      @media(max-width: 768px) {
+        display: none;
+      }
+    }
+    .tour-title-block {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      .auth-label {
+        @extend .page-label;
+      }
+    
+    }
+    .tour-select-block {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .modal-sign-in-label {
+        @extend .page-label;
+      }
+      @media(max-width:500px) {
+        flex-direction: column;
+      }
+      .multi-select {
+        .selected-options {
+          border: 1px solid #E3E3E3;	
+          border-radius: 2px;
+          position: relative;
+          min-height: 41px;
+          .selected-options-badges-list  {
+            position: relative;
+            z-index: 99;
+            cursor: pointer;
+          }
+         
+          .arrow {
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            height: 41px;
+            top: 13px;
+            left: -3px;
+            color: #8e8e8e;
+            font-size: 11px;
+          }
+          
+        }
+        .options {
+          padding: 10px;
+          height: auto;
+        }
+        
+        .option-list {
+          cursor: pointer;
+          margin-top: 5px;
+        }
+       
+      }
+      
+    }
+    .tour-description {
+      margin-bottom: 20px;
+      .tour-descr {
+        textarea {
+          border: 1px solid #E3E3E3;
+          border-radius: 2px;
+          width: 100%;
+          margin-right: 0;
+          color: #272727;
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 21px;
+          padding: 14px;
+          box-shadow: none;
+          &:focus {
+            border-color: #E3E3E3;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .tour-bottom {
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // max-width: 90%;
+      margin-bottom: 10px;
+      .button-main {
+        height: 49px;
+        width: 131px;
+        background: #008FB7;
+        text-transform: uppercase;
+        font-size: 13px;
+        &.btn-back {
+          background: none;
+          border: 1px solid #008FB7;
+          color: #008FB7;
+        }
+      }
+    }
+  }
+  .static-footer {
+    margin-top: -56px;
+    position: relative;
+  }
+}
+.age-range, .tour-category, .travel-mode {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+
+}
+#travelMode, #tourCategory, #tourPrice {
+  cursor: pointer;
+}
+.create-or-edit-tour-section {
+  .map-panel {
+    .side-map {
+     height: calc(100vh - 80px)!important;
+      @media screen and (max-width: 768px){
+        height: calc(100vh - 104px);
+      }
+    }
+  }
+}
+.upload-multimedia-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i{
+    font-size: 1.8em;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .create-tour-page {
+    .create-tour-container{
+      .left-block{
+        padding: 0 15px;
+        .left-panel{
+          padding: 15px;
+        }
+      }
+      .stop-bottom{
+        padding: 15px;
+        .info-string{
+          display: none;
+        }
+        justify-content: space-between;
+      }
+    }
+    .Modal{
+      left: 20px;
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      .preview{
+        width: 100%;
+      }
+    }
+  }
+}

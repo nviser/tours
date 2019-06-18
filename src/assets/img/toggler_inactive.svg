@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="20px" viewBox="0 0 41 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>A0995B32-B112-4EF0-988C-5E6CFCDE8C0B</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PAYMENTS-3" transform="translate(-604.000000, -489.000000)" stroke-width="2">
+            <g id="Group-9" transform="translate(624.500000, 499.000000) rotate(-180.000000) translate(-624.500000, -499.000000) translate(605.000000, 490.000000)">
+                <path d="M39,9 C39,13.9640625 34.9668783,18 30.0062791,18 L8.99372092,18 C4.03312172,18 0,13.9640625 0,9 C0,4.0359375 4.03312172,9.09494702e-13 8.99372092,9.09494702e-13 L30.0062791,9.09494702e-13 C34.9668783,9.09494702e-13 39,4.0359375 39,9 Z" id="Path" stroke="#8E8E8E"></path>
+                <path d="M39,9 C39,4.04296875 34.9570312,9.09494702e-13 30,9.09494702e-13 C25.0429688,9.09494702e-13 21,4.04296875 21,9 C21,13.9570313 25.0429688,18 30,18 C34.9570312,18 39,13.9570313 39,9 Z" id="Path" stroke="#979797"></path>
+            </g>
+        </g>
+    </g>
+</svg>

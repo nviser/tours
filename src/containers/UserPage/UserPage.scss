@@ -1,0 +1,26 @@
+@import "../../assets/scss/variables.scss";
+
+.home-logged {
+  height: 100%;
+  .logged-wrap {
+    position: relative;
+    min-height: calc(100% - 53px);
+    max-width: 1280px;
+    margin: 0 auto;
+    .container {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+    .panel {
+      margin-top: 40px;
+    }
+  }
+  .static-footer {
+    position: relative;
+    margin-top: -56px;
+  }
+  .logged-empty {
+    height: 56px;
+  }
+}

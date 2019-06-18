@@ -1,0 +1,138 @@
+.route-info {
+  margin-top: 15px; }
+  .route-info .tour-summary {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E6E6E6; }
+  .route-info-header {
+    display: flex; }
+  .route-info-block {
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between; }
+  .route-info-details {
+    color: #272727;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.8px;
+    line-height: 19px;
+    margin-top: 30px; }
+  .route-info .route-info-coast {
+    color: #272727;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.96px; }
+  .route-info-location {
+    margin: 0 5px;
+    text-transform: uppercase;
+    color: #525252;
+    font-size: 13px;
+    line-height: 17px; }
+  .route-info-categories {
+    color: #2C855A;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 17px;
+    text-transform: uppercase; }
+  .route-info-title {
+    color: #272727;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .route-info .tour-brief {
+    font-size: 14px;
+    color: #272727;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 15px; }
+  .route-info .tour-rating {
+    margin-bottom: 15px; }
+    .route-info .tour-rating .stars {
+      display: flex;
+      align-items: center; }
+    .route-info .tour-rating .reviews {
+      color: #525252;
+      font-size: 14px; }
+  .route-info .tour-info {
+    display: flex;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E6E6E6;
+    margin-top: 7px;
+    color: #272727;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px; }
+    .route-info .tour-info .info-item {
+      margin-right: 25px; }
+      .route-info .tour-info .info-item .item-top {
+        color: #8e8e8e;
+        font-family: "Roboto", sans-serif;
+        font-size: 14.4px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: uppercase; }
+      .route-info .tour-info .info-item .item-bottom {
+        white-space: nowrap;
+        height: 20px;
+        width: 20px;
+        color: #008FB7;
+        font-family: "Roboto", sans-serif;
+        font-size: 14.4px;
+        font-weight: 500;
+        line-height: 20px; }
+        .route-info .tour-info .info-item .item-bottom img {
+          height: 100%;
+          width: 100%; }
+        .route-info .tour-info .info-item .item-bottom--uppercase {
+          color: #008FB7;
+          font-family: "Roboto", sans-serif;
+          font-size: 14.4px;
+          font-weight: 500;
+          line-height: 20px;
+          text-transform: uppercase; }
+  .route-info-description {
+    padding: 20px 0;
+    border-bottom: 1px solid #E6E6E6;
+    color: #272727;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    white-space: pre-line; }
+
+.location-block {
+  display: flex;
+  margin: 15px 0; }
+
+.map-marker {
+  font-size: 12px; }
+
+.hosted-by {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px; }
+  .hosted-by .hosted-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px; }
+    .hosted-by .hosted-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .hosted-by .hosted-info {
+    font-size: 17px;
+    color: #8E8E8E;
+    font-weight: 500; }
+    .hosted-by .hosted-info .hosted-title {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19px; }
+    .hosted-by .hosted-info .hosted-user-name {
+      color: #0B97BE;
+      text-decoration: underline;
+      font-size: 16px; }

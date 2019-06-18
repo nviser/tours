@@ -1,0 +1,12 @@
+@import "../../../assets/scss/variables.scss";
+
+.btn-toolbar {
+  .post-type-btn {
+    padding: 10px;
+    &.active {
+      background: $color_main;
+      color: #ffffff;
+      border: none;
+    }
+  }
+}

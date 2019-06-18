@@ -1,0 +1,30 @@
+@import '../../../../assets/scss/common.scss';
+
+.stop-bottom {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow:-4px 0px 12px 2px rgba(0, 0, 0, 0.11);
+    .info-string{
+        margin-right: auto;
+        color: $gray-01;
+        font-size: 13px;
+        font-style: italic;
+    }
+    .success-btn {
+        @include successBtn(#7BC372);
+        border: none;
+        &:disabled {
+            background: #ddd;
+        }
+    }
+    .cancel-btn {
+        @include cancelBtn(#008FB7);
+        margin-right: 30px;
+        
+    }
+  }

@@ -1,0 +1,19 @@
+.photos-attachment {
+  position: relative;
+  height: 127px;
+  width: 142px;
+  margin: 10px; }
+  .photos-attachment img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .photos-attachment-delete {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer; }
+    .photos-attachment-delete img {
+      height: 100%;
+      width: 100%; }

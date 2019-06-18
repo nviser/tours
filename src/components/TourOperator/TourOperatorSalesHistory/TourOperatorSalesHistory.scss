@@ -1,0 +1,66 @@
+.tour-operator-content {
+    .content-header {
+        padding: 10px 0 30px;
+    }
+    &-title {
+        margin: 10px 0 30px;
+    }
+}
+.tour-operator-statistic {
+    display: flex;
+    color: #272727;
+    font-family: Roboto;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    .row {
+        width: 100%;
+    }
+    &-img {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-color: #f5f5f5;
+        justify-content: center;
+        border-radius: 50%;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &-item {  
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 25px 0 10px;
+        border-right: 2px solid #D8D8D8;
+        &-label {
+            // white-space: nowrap;
+        }
+        &-count_tours {
+            display: flex;
+            margin-top: 15px;
+            align-items: baseline;
+        }
+        &-title {
+            margin-left: 20px;
+        }
+        &-label {
+            white-space: nowrap;
+        }
+        &-count {
+            font-size: 26px;
+            line-height: 17px;
+            font-weight: bold;
+        }
+        &-tours {
+            margin-left: 10px;
+            color: #8E8E8E;
+        }
+    }
+    &-item:last-child {
+        display: flex;
+        align-items: center;
+        border: none;
+    }
+}

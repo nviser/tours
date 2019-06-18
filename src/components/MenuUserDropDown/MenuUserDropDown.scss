@@ -1,0 +1,99 @@
+.static-user-name {
+  .dropdown {
+    height: 100%;
+    &.open {
+      .dropdown-toggle {
+        box-shadow: none;
+        background-color: transparent;
+        color: #ffffff;
+        &.btn-default {
+          &:hover, &:active, &:focus {
+            background-color: transparent;
+            color: #ffffff;
+          }
+        }
+      }
+      .dropdown-menu {
+        border: none;
+        min-width: 221px;
+        padding: 0;
+        margin: 0;
+        border-radius: 5px;
+        background-color: white;
+        left: unset;
+        right: 30px;
+        top:calc(100% + 38px);
+        li {
+          &.triangle{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 14px 10px;
+            border-color: transparent transparent #ffffff transparent;
+            top: -14px;
+            right: 45px;
+            cursor: default;
+          }
+          a {
+            outline: none;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            div {
+              width: 20px;
+            }
+            img{
+              filter: grayscale(1);
+            }
+            span {
+              font-family: "Roboto", sans-serif;
+              font-size: 15px;
+              color: #272727;
+              margin-left: 10px;
+            }
+            &:hover {
+              background-color: rgba(64,144,185,0.15);
+            }
+            &:focus{
+              background-color: transparent;
+            }
+          }
+          border-bottom: 1px solid #C6C6C6;;
+          &.my-dashboards {
+            a{
+              padding: 20px 10px;
+              cursor: default;
+              font-weight: bold;
+              &:hover{
+                background-color: transparent;
+              }
+            }
+          }
+        }
+
+      }
+    }
+    .dropdown-button {
+      height: 100%;
+      padding-right: 30px;
+      background-color: transparent;
+      border: none;
+      color: #ffffff;
+      &:active {
+        background-color: transparent;
+        color: #ffffff;
+      }
+      .caret {
+        border-width: 5px;
+        margin-left: 15px;
+      }
+      &:active {
+        box-shadow: none;
+      }
+    }
+  }
+  .divider {
+    background-color: #008FB7!important;
+  }
+}

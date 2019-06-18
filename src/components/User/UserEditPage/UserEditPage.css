@@ -1,0 +1,34 @@
+.user-settings, .company-settings {
+  font-family: 'Roboto', sans-serif; }
+  .user-settings .user-edit-section, .user-settings .company-edit-section, .company-settings .user-edit-section, .company-settings .company-edit-section {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c6c6c6; }
+    .user-settings .user-edit-section .user-edit-form .input-wrap, .user-settings .user-edit-section .company-edit-form .input-wrap, .user-settings .company-edit-section .user-edit-form .input-wrap, .user-settings .company-edit-section .company-edit-form .input-wrap, .company-settings .user-edit-section .user-edit-form .input-wrap, .company-settings .user-edit-section .company-edit-form .input-wrap, .company-settings .company-edit-section .user-edit-form .input-wrap, .company-settings .company-edit-section .company-edit-form .input-wrap {
+      position: relative; }
+      .user-settings .user-edit-section .user-edit-form .input-wrap .set-edit-button, .user-settings .user-edit-section .company-edit-form .input-wrap .set-edit-button, .user-settings .company-edit-section .user-edit-form .input-wrap .set-edit-button, .user-settings .company-edit-section .company-edit-form .input-wrap .set-edit-button, .company-settings .user-edit-section .user-edit-form .input-wrap .set-edit-button, .company-settings .user-edit-section .company-edit-form .input-wrap .set-edit-button, .company-settings .company-edit-section .user-edit-form .input-wrap .set-edit-button, .company-settings .company-edit-section .company-edit-form .input-wrap .set-edit-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        padding: 0 5px;
+        cursor: pointer; }
+    .user-settings .user-edit-section #formControlsText, .user-settings .company-edit-section #formControlsText, .company-settings .user-edit-section #formControlsText, .company-settings .company-edit-section #formControlsText {
+      color: #003E50; }
+  .user-settings .user-settings-header, .user-settings .company-settings-header, .company-settings .user-settings-header, .company-settings .company-settings-header {
+    font-size: 20px;
+    font-weight: 900;
+    color: #272727;
+    line-height: 19px;
+    margin: 20px 0; }
+  .user-settings .user-settings-label, .user-settings .company-settings-label, .company-settings .user-settings-label, .company-settings .company-settings-label {
+    text-transform: uppercase;
+    color: #8E8E8E;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    margin-bottom: 5px;
+    margin-left: 10px; }

@@ -1,0 +1,78 @@
+@import "../../../../assets/scss/variables.scss";
+
+.dashboard-payment-methods {
+  height: 565px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px 30px 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+  .dashboard-payment-methods-header{
+    display: flex;
+    padding: 0 0 25px 0;
+    justify-content: space-between;
+    align-items: center;
+    .payment-header {
+      font-size: 20px;
+      letter-spacing: 0.9px;
+      color: $color_text;
+    }
+    .payment-more {
+      color: #45A1E4;
+      font-size: 15px;
+      letter-spacing: 0.48px;
+      text-decoration: underline;
+      font-family: $font_roboto;
+      cursor: pointer;
+    }
+  }
+  .payment-methods-cards-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    min-height: 80px;
+    margin-top: 5px;
+    line-height: 28px;
+    font-size: 28px;
+    color: #2d2d2d;
+    .card{
+      width: 100%;
+      margin: 0;
+    }
+    .add-payment-method{
+      width: 100%;
+    }
+  }
+  .not-items {
+    justify-content: flex-end;
+  }
+  .not-items-btn {
+    margin-bottom: 0;
+    margin-top: 90px;
+  }
+}
+.fixed-heigth {
+  height: 634px!important;
+  .dashboard-payment-methods {
+    height: 100%;
+  }
+}
+
+.dpm-description {
+  margin-top: 20px;
+  max-width: 220px;
+}
+.dpm-img {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .dashboard-payment-methods{
+    height: 455px;
+  }
+}

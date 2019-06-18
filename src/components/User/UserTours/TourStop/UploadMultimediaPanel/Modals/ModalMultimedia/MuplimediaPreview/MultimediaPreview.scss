@@ -1,0 +1,38 @@
+.preview-multimedia {
+    margin-top: 60px;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-name {
+        color: #272727;	
+        font-family: Roboto;	
+        font-size: 15px;	
+        line-height: 18px;
+    }
+
+    &-complete {
+        color: #C6C51E;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: right;
+        margin-right: 35px;
+    }
+    &-player {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    &-cancel {
+        width: 24px;
+        height: 24px;
+        margin-left: 5px;
+        cursor: pointer;
+        img {
+            height: 100%;
+            // width: 100%;
+        }
+    }
+    
+}

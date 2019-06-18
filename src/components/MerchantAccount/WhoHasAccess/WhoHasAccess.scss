@@ -1,0 +1,186 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/common.scss";
+
+.Modal {
+    border-radius: 5px;
+}
+.access-people {
+    padding: 30px 50px;
+    height: 501px;
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .access-form {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .access-title {
+        color: $color_text;
+        line-height: 30px;
+        font-family: $font_roboto;
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: 0.9px;
+        margin-bottom: 40px;
+    }
+    .access-description {
+        color: $color_text;
+        font-size: 18px;
+        letter-spacing: 0.21px;
+        line-height: 21px;
+    }
+    .stop-bottom {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: none;
+        padding: 0;
+        height: fit-content;
+        margin-top: 80px;
+        .access-link {
+            @include regularBtn(#45A1E4, #45A1E4, transparent, transparent, none, 0, 131px, 49px);
+        }
+        .btn-back {
+            @include regularBtn(#F15B59, #F15B59, transparent, transparent, none, 0, 131px, 49px);
+        }
+        .access-link, .btn-back {
+            font-weight: normal;
+            text-transform: capitalize;
+            font-size: 15px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .btn-next {
+            @include regularBtn(#fff, #fff, #7BC372, #6AA962, none, 3px, 131px, 49px);
+        }
+        .btn-block {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .form-control-group {
+        margin-bottom: 20px;
+        .modal-sign-in-label {
+            color: $gray-01;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 0.11px;
+            line-height: 14px;
+        }
+        .form-control-input {
+            min-width: 150px;
+            outline: none;
+            border: 1px solid #E3E3E3;
+            border-radius: 2px;
+            padding: 0 10px;
+            height: 41px;
+            width: 100%;
+            font-weight: 300;
+            color: $color_text;
+            font-size: 16px;
+            line-height: 19px;
+            &::placeholder {
+                color: #d6d6d6;
+            }
+        }
+        .form-control-textarea {
+            resize: none;
+            border: 1px solid #E3E3E3;
+            border-radius: 2px;
+            outline: none;
+            &:focus {
+                box-shadow: none;
+            }
+            &::placeholder {
+                color: #d6d6d6;
+            }
+        }
+        .access-label {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .access-checkbox {
+        }
+        .checkmark {
+            width: 26px;
+            height: 26px;
+            display: block;
+            cursor: pointer;
+            margin-right: 5px;
+            position: relative;
+            border-radius: 15px;
+            border: 2px solid #7bc372;
+            &.active {
+                &:before, &:after {
+                    background: #7bc372;
+                    transition: all .3s ease;
+                }
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                top: 4px;
+                left: 12px;
+                width: 2px;
+                height: 14px;
+                background: #FFFFFF;
+                transform: rotateZ(45deg);
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: 10px;
+                left: 5px;
+                width: 2px;
+                height: 7px;
+                background: #FFFFFF;
+                transform: rotateZ(-45deg);
+            }
+        }
+        .checkbox {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 2000px) {
+    .merchant-account {
+        .Modal {
+            min-width: 543px;
+            left: calc(50% - 330px);
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .merchant-account {
+        .Modal {
+            width: calc(100% - 20px);
+            min-width: 0;
+            left: 10px;
+            .access-people {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .access-people {
+        padding: 30px 20px;
+        height: auto;
+        .stop-bottom {
+            margin-top: 20px;
+            flex-direction: column;
+            .btn-block {
+                flex-direction: column;
+            }
+        }
+    }
+}
